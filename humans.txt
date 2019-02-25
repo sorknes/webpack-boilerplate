@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Knut A. Sorknes -- Senior Front-end Developer / Designer -- @Sorknes
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, Tokens
+    Node, Webpack, SASS, JavScript, Theo, Nunjucks

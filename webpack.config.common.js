@@ -22,7 +22,7 @@ function returnEntries(globPath) {
 }
 
 module.exports = {
-  entry: [`${scripts}/main.js`, `${styles}/styles.scss`],
+  entry: [`${scripts}/main.js`, `${styles}/wb-styles.scss`],
 
   module: {
     rules: [

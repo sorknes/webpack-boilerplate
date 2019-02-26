@@ -10,3 +10,38 @@
 //
 // Every selector, placeholder, mixin and function in the project should be namespaced.
 // Namespace should be buf followed by the dash suffix -, like this: wb- (wb = (w)ebpack (b)oilerplate).
+
+@charset "utf-8";
+
+// 00. Contains styling from external vendors
+// -------------------------------------------------------------------------------
+@import './00-vendor/all-vendors';
+
+// 01. Contains global styles, such as breakpoints, fonts, colors, etc
+// -------------------------------------------------------------------------------
+@import './01-config/all-config';
+
+// 02. Contains global mixins, functions, helper selectors, etc.
+// -------------------------------------------------------------------------------
+@import './02-tools/all-tools';
+
+// 03. Contains global styles, such as normalize, fonts, colors, etc
+// -------------------------------------------------------------------------------
+@import './03-base/all-base';
+
+// 04. Contains each self-contained component in its own .scss partial
+// -------------------------------------------------------------------------------
+@import './04-components/all-components';
+
+// 05. Contains predefined mixins, such as placeholder, border, border-radius etc
+// -------------------------------------------------------------------------------
+@import './05-utilities/all-utilities';
+
+// 06. Contains print specific styling
+// -------------------------------------------------------------------------------
+@import './wb-print';
+
+// 07. Contains all the CSS declarations, hacks and things we are not proud of
+//     in a shame file
+// -------------------------------------------------------------------------------
+@import './wb-shame';

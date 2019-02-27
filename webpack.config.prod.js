@@ -6,6 +6,7 @@
 
 const path = require('path'),
   CleanWebpackPlugin = require('clean-webpack-plugin'),
+  jsonImporter = require('node-sass-json-importer'),
   MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const merge = require('webpack-merge'),
@@ -27,9 +28,20 @@ module.exports = merge(common, {
           {
             loader: MiniCssExtractPlugin.loader,
           },
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+            },
+          },
           'postcss-loader',
-          'sass-loader',
+          {
+            loader: 'sass-loader',
+            // Apply the JSON importer via sass-loader's options.
+            options: {
+              importer: jsonImporter(),
+            },
+          },
         ],
       },
     ],

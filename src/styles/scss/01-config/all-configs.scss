@@ -6,3 +6,9 @@
 
 // 01. Import tokens as JSON
 @import '../tokens/token-colors.json';
+
+// Example usage
+// -------------------------------------------------------------------------------
+// .class-name {
+//   background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_70);
+// }

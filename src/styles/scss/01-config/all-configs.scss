@@ -7,17 +7,26 @@
 // 01. Import color token
 @import '../../tokens/token-colors.json';
 
+// Example usage
+// -------------------------------------------------------------------------------
+// .class-name {
+//   background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_0);
+// }
+
 // 02. Import font-size token
 @import '../../tokens/token-font-size.json';
 
-// 01. Example usage
+// Example usage
 // -------------------------------------------------------------------------------
 // .class-name {
-//   background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_70);
+//   font-size: map-get($FONT_SIZE, FONT_SIZE_M);
 // }
 
-// 02. Example usage
+// 03. Import font-weight
+@import '../../tokens/token-font-weight.json';
+
+// Example usage
 // -------------------------------------------------------------------------------
 // .class-name {
-//   background-color: map-get($FONT_SIZE, FONT_SIZE_M);
+//   font-weight: map-get($FONT_WEIGHT, FONT_WEIGHT_REGULAR);
 // }

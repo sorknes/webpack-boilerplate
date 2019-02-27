@@ -45,3 +45,12 @@
 //     in a shame file
 // -------------------------------------------------------------------------------
 @import './wb-shame';
+
+// Test, test, test
+body {
+  font-family: 'Open Sans', sans-serif;
+
+  font-size: map-get($FONT_SIZE, FONT_SIZE_XXXL);
+  font-weight: map-get($FONT_WEIGHT, FONT_WEIGHT_BOLD);
+  background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_100);
+}

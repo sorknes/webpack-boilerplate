@@ -4,11 +4,20 @@
 // ===============================================================================
 //
 
-// 01. Import color tokens as JSON
-@import '../tokens/token-colors.json';
+// 01. Import color token
+@import '../../tokens/token-colors.json';
 
-// Example usage
+// 02. Import font-size token
+@import '../../tokens/token-font-size.json';
+
+// 01. Example usage
 // -------------------------------------------------------------------------------
 // .class-name {
 //   background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_70);
+// }
+
+// 02. Example usage
+// -------------------------------------------------------------------------------
+// .class-name {
+//   background-color: map-get($FONT_SIZE, FONT_SIZE_M);
 // }

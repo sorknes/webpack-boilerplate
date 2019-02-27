@@ -1,0 +1,67 @@
+# tokens/aliases/token-color.yml
+
+aliases:
+  # Color scheme, grey tint
+  COLOR_GREY_TINT_100:
+    value: '#ffffff'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_95:
+    value: '#f5f5f5'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_90:
+    value: '#e5e5e5'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_85:
+    value: '#d9d9d9'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_80:
+    value: '#cccccc'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_75:
+    value: '#bfbfbf'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_70:
+    value: '#b3b3b3'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_65:
+    value: '#a6a6a6'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_60:
+    value: '#999999'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_55:
+    value: '#8c8c8c'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_50:
+    value: '#7f7f7f'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_45:
+    value: '#737373'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_40:
+    value: '#666666'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_35:
+    value: '#595959'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_30:
+    value: '#4d4d4d'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_25:
+    value: '#404040'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_20:
+    value: '#333333'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_15:
+    value: '#262626'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_10:
+    value: '#1a1a1a'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_5:
+    value: '#0d0d0d'
+    comment: 'Neutral'
+  COLOR_GREY_TINT_0:
+    value: '#000000'
+    comment: 'Neutral'

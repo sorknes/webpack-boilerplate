@@ -1,0 +1,9 @@
+{
+  "BORDER_WIDTH": {
+    "BORDER_WIDTH_S": "1px",
+    "BORDER_WIDTH_M": "2px",
+    "BORDER_WIDTH_L": "4px",
+    "BORDER_WIDTH_XL": "8px",
+    "BORDER_WIDTH_XXL": "16px"
+  }
+}

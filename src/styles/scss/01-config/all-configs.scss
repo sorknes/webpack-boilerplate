@@ -30,3 +30,12 @@
 // .class-name {
 //   font-weight: map-get($FONT_WEIGHT, FONT_WEIGHT_REGULAR);
 // }
+
+// 04. Import border-width
+@import '../../tokens/token-border-width.json';
+
+// Example usage
+// -------------------------------------------------------------------------------
+// .class-name {
+//   border: map-get($BORDER_WIDTH, BORDER_WIDTH_SMALL) solid regular;
+// }

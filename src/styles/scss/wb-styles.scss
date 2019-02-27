@@ -41,13 +41,13 @@
 // -------------------------------------------------------------------------------
 @import './wb-print';
 
-// 07. Contains all the CSS declarations, hacks and things we are not proud of
-//     in a shame file
+// 07. Contains all the CSS declarations, hacks and things we are not proud of in a shame file
 // -------------------------------------------------------------------------------
 @import './wb-shame';
 
 // Test, test, test
 body {
+  line-height: 1.45;
   font-family: 'Open Sans', sans-serif;
 
   font-size: map-get($FONT_SIZE, FONT_SIZE_XXXL);

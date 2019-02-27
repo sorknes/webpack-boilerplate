@@ -46,11 +46,14 @@
 @import './wb-shame';
 
 // Test, test, test
-body {
+.wb-test {
   line-height: 1.45;
   font-family: 'Open Sans', sans-serif;
 
   font-size: map-get($FONT_SIZE, FONT_SIZE_XXXL);
   font-weight: map-get($FONT_WEIGHT, FONT_WEIGHT_BOLD);
-  background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_100);
+  border-radius: map-get($BORDER_RADIUS, BORDER_RADIUS_XXXL);
+  border: map-get($BORDER_WIDTH, BORDER_WIDTH_M) solid
+    map-get($COLOR_GREY, COLOR_GREY_TINT_0);
+  background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_50);
 }

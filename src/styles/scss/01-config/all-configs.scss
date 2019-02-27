@@ -39,3 +39,12 @@
 // .class-name {
 //   border: map-get($BORDER_WIDTH, BORDER_WIDTH_SMALL) solid regular;
 // }
+
+// 05. Import border-radius
+@import '../../tokens/token-border-radius.json';
+
+// Example usage
+// -------------------------------------------------------------------------------
+// .class-name {
+//   border-radius: map-get($BORDER_RADIUS, BORDER_RADIUS_XXXL) solid regular;
+// }

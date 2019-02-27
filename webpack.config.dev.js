@@ -5,7 +5,8 @@
 //
 
 const merge = require('webpack-merge'),
-  common = require('./webpack.config.common.js')
+  common = require('./webpack.config.common.js'),
+  jsonImporter = require('node-sass-json-importer')
 
 module.exports = merge(common, {
   mode: 'development',
@@ -14,7 +15,23 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.(sass|scss)$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+            },
+          },
+          'postcss-loader',
+          {
+            loader: 'sass-loader',
+            // Apply the JSON importer via sass-loader's options.
+            options: {
+              importer: jsonImporter(),
+            },
+          },
+        ],
       },
     ],
   },

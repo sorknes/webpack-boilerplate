@@ -4,10 +4,10 @@
 // ===============================================================================
 //
 
-const path = require('path'),
-  CleanWebpackPlugin = require('clean-webpack-plugin'),
-  jsonImporter = require('node-sass-json-importer'),
-  MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const jsonImporter = require('node-sass-json-importer')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const merge = require('webpack-merge'),
   common = require('./webpack.config.common.js')

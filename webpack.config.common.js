@@ -4,13 +4,16 @@
 // ===============================================================================
 //
 
-const path = require('path'),
-  HtmlWebpackPlugin = require('html-webpack-plugin'),
-  glob_entries = require('webpack-glob-folder-entries')
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const SvgSpriteHtmlWebpackPlugin = require('svg-sprite-html-webpack')
+const glob_entries = require('webpack-glob-folder-entries')
 
-let src = path.resolve(__dirname, 'src')
+let src = `./src`
 let styles = `${src}/styles/scss`
+let images = `${src}/images`
 let scripts = `${src}/scripts`
+let templates = `${src}/templates`
 
 function returnEntries(globPath) {
   let entries = glob_entries(globPath, true)
@@ -33,19 +36,27 @@ module.exports = {
           {
             loader: 'nunjucks-html-loader',
             options: {
-              searchPaths: [...returnEntries('./src/templates/**/')],
+              searchPaths: [...returnEntries(`${templates}/**/`)],
             },
           },
         ],
+      },
+      {
+        test: /\.svg$/,
+        exclude: /node_modules/,
+        use: SvgSpriteHtmlWebpackPlugin.getLoader(),
       },
     ],
   },
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'nunjucks-html-loader!./src/templates/index.njk',
+      template: `nunjucks-html-loader!${templates}/index.njk`,
       filename: 'index.html',
       inject: 'body',
+    }),
+    new SvgSpriteHtmlWebpackPlugin({
+      includeFiles: [`${images}/icons/*.svg`],
     }),
   ],
 }

@@ -4,9 +4,9 @@
 // ===============================================================================
 //
 
-const merge = require('webpack-merge'),
-  common = require('./webpack.config.common.js'),
-  jsonImporter = require('node-sass-json-importer')
+const merge = require('webpack-merge')
+const common = require('./webpack.config.common.js')
+const jsonImporter = require('node-sass-json-importer')
 
 module.exports = merge(common, {
   mode: 'development',

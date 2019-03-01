@@ -24,14 +24,35 @@ module.exports = merge(common, {
             },
           },
           'postcss-loader',
+          'resolve-url-loader',
           {
             loader: 'sass-loader',
-            // Apply the JSON importer via sass-loader's options.
             options: {
               importer: jsonImporter(),
             },
           },
         ],
+      },
+      {
+        test: /\.svg$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              fallback: 'file-loader',
+              name: '[name].[ext]',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+        },
       },
     ],
   },

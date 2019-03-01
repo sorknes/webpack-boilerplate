@@ -14,10 +14,10 @@ const merge = require('webpack-merge'),
 
 module.exports = merge(common, {
   mode: 'production',
-
   output: {
     filename: './scripts/[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: './',
   },
 
   module: {
@@ -35,14 +35,38 @@ module.exports = merge(common, {
             },
           },
           'postcss-loader',
+          'resolve-url-loader',
           {
             loader: 'sass-loader',
-            // Apply the JSON importer via sass-loader's options.
             options: {
               importer: jsonImporter(),
             },
           },
         ],
+      },
+      {
+        test: /\.svg$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              fallback: 'file-loader',
+              name: '[name].[ext]',
+              outputPath: './images/icons',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          publicPath: '../images',
+          outputPath: './images',
+        },
       },
     ],
   },

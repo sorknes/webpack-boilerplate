@@ -9,11 +9,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const SvgSpriteHtmlWebpackPlugin = require('svg-sprite-html-webpack')
 const glob_entries = require('webpack-glob-folder-entries')
 
-let src = `./src`
-let styles = `${src}/styles/scss`
-let images = `${src}/images`
-let scripts = `${src}/scripts`
-let templates = `${src}/templates`
+const PATHS = {
+  styles: path.join(__dirname, '/src/styles/scss'),
+  images: path.join(__dirname, '/src/images'),
+  scripts: path.join(__dirname, '/src/scripts'),
+  templates: './src/templates',
+}
 
 function returnEntries(globPath) {
   let entries = glob_entries(globPath, true)
@@ -25,38 +26,33 @@ function returnEntries(globPath) {
 }
 
 module.exports = {
-  entry: [`${scripts}/main.js`, `${styles}/wb-styles.scss`],
+  entry: [`${PATHS.scripts}/main.js`, `${PATHS.styles}/wb-styles.scss`],
 
   module: {
     rules: [
       {
         test: /\.html$|njk|nunjucks/,
         use: [
-          'html-loader',
+          { loader: 'html-loader', options: { minimize: true } },
           {
             loader: 'nunjucks-html-loader',
             options: {
-              searchPaths: [...returnEntries(`${templates}/**/`)],
+              searchPaths: [...returnEntries(`${PATHS.templates}/**/`)],
             },
           },
         ],
-      },
-      {
-        test: /\.svg$/,
-        exclude: /node_modules/,
-        use: SvgSpriteHtmlWebpackPlugin.getLoader(),
       },
     ],
   },
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: `nunjucks-html-loader!${templates}/index.njk`,
+      template: `nunjucks-html-loader!${PATHS.templates}/index.njk`,
       filename: 'index.html',
       inject: 'body',
     }),
     new SvgSpriteHtmlWebpackPlugin({
-      includeFiles: [`${images}/icons/*.svg`],
+      includeFiles: [`${PATHS.images}/icons/*.svg`],
     }),
   ],
 }

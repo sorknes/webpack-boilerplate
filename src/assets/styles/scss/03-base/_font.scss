@@ -1,7 +1,12 @@
 // -------------------------------------------------------------------------------
 //
-// Description: Contains global styles, such as normalize, fonts, colors, etc
+// Description: Sett default font values
 // ===============================================================================
 //
 
-@import './font';
+html {
+  line-height: 1.45;
+
+  @include font-family(FONT_FAMILY_PRIMARY);
+  @include font-weight(FONT_WEIGHT_REGULAR);
+}

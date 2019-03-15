@@ -7,7 +7,8 @@ Design tokens are the visual design atoms of the design system — specifically,
 they are named entities that store visual design attributes. We use them in
 place of hard-coded values (such as hex values for color or pixel values for
 spacing) in order to maintain a scalable and consistent visual system for UI
-development.
+development - Source
+[SalesForce](https://www.lightningdesignsystem.com/design-tokens/).
 
 ## Border radius
 
@@ -50,6 +51,14 @@ development.
 ```scss
 .class-name {
   transition-duration: map-get($DURATION, DURATION_DEFAULT);
+}
+```
+
+## Font family
+
+```scss
+.class-name {
+  font-size: map-get($FONT_FAMILY, FONT_FAMILY_PRIMARY);
 }
 ```
 

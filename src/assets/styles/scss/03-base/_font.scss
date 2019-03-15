@@ -9,4 +9,9 @@ html {
 
   @include font-family(FONT_FAMILY_PRIMARY);
   @include font-weight(FONT_WEIGHT_REGULAR);
+  @include establish-baseline();
+
+  * {
+    @include font-smoothing();
+  }
 }

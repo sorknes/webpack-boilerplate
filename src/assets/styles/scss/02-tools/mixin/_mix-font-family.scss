@@ -1,10 +1,15 @@
 // -------------------------------------------------------------------------------
 //
-// Description: Contains global mixins, functions, helper selectors, etc.
+// Description: Mixin, font-family
 // ===============================================================================
 //
 
-// Mixin
+@mixin font-family($family) {
+  font-family: map-get($FONT_FAMILY, $family);
+}
+
+// Example usage
 // -------------------------------------------------------------------------------
-@import './mixin/mix-font-family';
-@import './mixin/mix-font-weight';
+// .class-name {
+//   @include font-family(FONT_FAMILY_PRIMARY);
+// }

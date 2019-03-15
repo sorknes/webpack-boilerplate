@@ -4,47 +4,17 @@
 // ===============================================================================
 //
 
-// 01. Import color token
-@import '../../tokens/token-colors.json';
-
-// Example usage
+// Import global styles
 // -------------------------------------------------------------------------------
-// .class-name {
-//   background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_0);
-// }
+// @import '';
 
-// 02. Import font-size token
-@import '../../tokens/token-font-size.json';
-
-// Example usage
+// Import tokens and use as SASS map
 // -------------------------------------------------------------------------------
-// .class-name {
-//   font-size: map-get($FONT_SIZE, FONT_SIZE_M);
-// }
 
-// 03. Import font-weight
-@import '../../tokens/token-font-weight.json';
-
-// Example usage
-// -------------------------------------------------------------------------------
-// .class-name {
-//   font-weight: map-get($FONT_WEIGHT, FONT_WEIGHT_REGULAR);
-// }
-
-// 04. Import border-width
-@import '../../tokens/token-border-width.json';
-
-// Example usage
-// -------------------------------------------------------------------------------
-// .class-name {
-//   border: map-get($BORDER_WIDTH, BORDER_WIDTH_SMALL) solid regular;
-// }
-
-// 05. Import border-radius
 @import '../../tokens/token-border-radius.json';
-
-// Example usage
-// -------------------------------------------------------------------------------
-// .class-name {
-//   border-radius: map-get($BORDER_RADIUS, BORDER_RADIUS_XXXL) solid regular;
-// }
+@import '../../tokens/token-border-width.json';
+@import '../../tokens/token-breakpoints.json';
+@import '../../tokens/token-colors.json';
+@import '../../tokens/token-font-size.json';
+@import '../../tokens/token-font-weight.json';
+@import '../../tokens/token-line-height.json';

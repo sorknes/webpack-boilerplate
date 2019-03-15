@@ -6,8 +6,11 @@
 
 const path = require('path')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+const jsonImporter = require('node-sass-json-importer')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 const merge = require('webpack-merge')
 const common = require('./webpack.config.common.js')
@@ -28,9 +31,19 @@ module.exports = merge(common, {
           {
             loader: MiniCssExtractPlugin.loader,
           },
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+            },
+          },
           'postcss-loader',
-          'sass-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              importer: jsonImporter(),
+            },
+          },
         ],
       },
       {
@@ -45,6 +58,17 @@ module.exports = merge(common, {
           },
         ],
       },
+    ],
+  },
+
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: true,
+      }),
+      new OptimizeCSSAssetsPlugin({}),
     ],
   },
 

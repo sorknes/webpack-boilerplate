@@ -1,0 +1,37 @@
+{# -------------------------------------------------------------------------------
+
+   Description: Landingpage
+   ===============================================================================
+#}
+
+{% extends "./patterns/_layout.njk" %}
+
+{% block main %}
+  <h1>Hello World</h1>
+  <div>
+    <h2>Inline image</h2>
+    <img src="./assets/images/image.png" />
+  </div>
+
+  <div>
+    <h2>Background image</h2>
+    <div class="wb-image-test"></div>
+  </div>
+
+  <div>
+    <h2>Inline SVG</h2>
+    <svg>
+      <use xlink:href="#icon-heart"></use>
+    </svg>
+  </div>
+
+  <div>
+    <h2>Background SVG</h2>
+    <div class="wb-svg-test"></div>
+  </div>
+
+  <div>
+    <h2>Link</h2>
+    <a href="./about.html">Click me</a>
+  </div>
+{% endblock %}

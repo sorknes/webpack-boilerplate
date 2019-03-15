@@ -8,13 +8,14 @@
 // -------------------------------------------------------------------------------
 // @import '';
 
-// Import tokens and use as SASS map
+// Import tokens and use as SASS maps
 // -------------------------------------------------------------------------------
 
 @import '../../tokens/token-border-radius.json';
 @import '../../tokens/token-border-width.json';
 @import '../../tokens/token-breakpoints.json';
 @import '../../tokens/token-colors.json';
+@import '../../tokens/token-duration.json';
 @import '../../tokens/token-font-size.json';
 @import '../../tokens/token-font-weight.json';
 @import '../../tokens/token-line-height.json';

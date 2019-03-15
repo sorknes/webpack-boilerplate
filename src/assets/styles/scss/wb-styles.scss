@@ -60,13 +60,20 @@
   // background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_50);
 }
 
-// .wb-image-test {
-//   width: 200px;
-//   height: 200px;
-//   background-image: url('../../images/icons/icon-people.svg');
-//   background-size: cover;
-//   background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_75);
-// }
+.wb-svg-test {
+  width: 200px;
+  height: 200px;
+  background-image: url('../../images/icons/icon-heart.svg');
+  background-size: cover;
+  // background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_75);
+}
+
+.wb-image-test {
+  width: 400px;
+  height: 400px;
+  background-image: url('../../images/image.png');
+  background-size: cover;
+}
 
 // .wb-image-test-test {
 //   width: 200px;
@@ -75,10 +82,3 @@
 //   background-size: cover;
 //   background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_75);
 // }
-
-.wb-image-test-secondary {
-  width: 400px;
-  height: 400px;
-  background-image: url('../../images/image.png');
-  background-size: cover;
-}

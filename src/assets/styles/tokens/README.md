@@ -1,10 +1,17 @@
 # How to use tokens
 
-Her you can see how to use the JSON token files in your CSS.
+Here's a list of all available design tokens, with examples how to use them in
+your CSS file.
+
+Design tokens are the visual design atoms of the design system — specifically,
+they are named entities that store visual design attributes. We use them in
+place of hard-coded values (such as hex values for color or pixel values for
+spacing) in order to maintain a scalable and consistent visual system for UI
+development.
 
 ## Border radius
 
-```css
+```scss
 .class-name {
   border-radius: map-get($BORDER_RADIUS, BORDER_RADIUS_XXXL);
 }
@@ -12,7 +19,7 @@ Her you can see how to use the JSON token files in your CSS.
 
 ## Border width
 
-```css
+```scss
 .class-name {
   border: map-get($BORDER_WIDTH, BORDER_WIDTH_S) solid map-get(
       $COLOR_GREY,
@@ -23,24 +30,32 @@ Her you can see how to use the JSON token files in your CSS.
 
 ## Breakpoints
 
-```css
-@media (min-width: map-get($BREAKPOINT, BREAKPOINT_S)) {
-  .class-name {
+```scss
+.class-name {
+  @media (min-width: map-get($BREAKPOINT, BREAKPOINT_S)) {
   }
 }
 ```
 
 ## Colors
 
-```css
+```scss
 .class-name {
   background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_0);
 }
 ```
 
+## Duration
+
+```scss
+.class-name {
+  transition-duration: map-get($DURATION, DURATION_DEFAULT);
+}
+```
+
 ## Font size
 
-```css
+```scss
 .class-name {
   font-size: map-get($FONT_SIZE, FONT_SIZE_M);
 }
@@ -48,7 +63,7 @@ Her you can see how to use the JSON token files in your CSS.
 
 ## Font weight
 
-```css
+```scss
 .class-name {
   font-weight: map-get($FONT_WEIGHT, FONT_WEIGHT_REGULAR);
 }
@@ -56,7 +71,7 @@ Her you can see how to use the JSON token files in your CSS.
 
 ## Line height
 
-```css
+```scss
 .class-name {
   line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_S);
 }

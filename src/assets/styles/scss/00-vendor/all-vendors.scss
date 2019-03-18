@@ -14,6 +14,6 @@ $breakpoints: sm 48em 46rem, md 62em 61rem, lg 75em 71rem;
 
 // Import vendor from node_modules
 // -------------------------------------------------------------------------------
+// @import './normalize/normalize';
+@import '~sanitize.css';
 @import '~flexboxgrid-sass/flexboxgrid';
-
-// TODO: Legg til normalize.scss og fortsett med å bygge opp SCSS arkitekturen ...

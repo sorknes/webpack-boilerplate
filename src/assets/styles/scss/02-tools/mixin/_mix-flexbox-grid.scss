@@ -4,6 +4,20 @@
 // ===============================================================================
 //
 
+@mixin container() {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: calc(100% - 2rem);
+  box-sizing: content-box;
+}
+
+@mixin container-fluid() {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
 @mixin row($full-width: 'false') {
   box-sizing: border-box;
   margin: 0 auto;

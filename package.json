@@ -52,7 +52,6 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "flexboxgrid-sass": "^8.0.5",
     "sanitize.css": "^8.0.0"
   }
 }

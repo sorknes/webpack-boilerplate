@@ -31,7 +31,7 @@ $mq-breakpoints: (
   s: map-get($BREAKPOINT, BREAKPOINT_S),
   m: map-get($BREAKPOINT, BREAKPOINT_M),
   l: map-get($BREAKPOINT, BREAKPOINT_L),
-  xl: map-get($BREAKPOINT, BREAKPOINT_S),
+  xl: map-get($BREAKPOINT, BREAKPOINT_XL),
 );
 
 // Used for computer screens, tablets, smart-phones etc.

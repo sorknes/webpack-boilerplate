@@ -45,6 +45,30 @@
 // -------------------------------------------------------------------------------
 @import './wb-shame';
 
+body {
+  background-color: red;
+
+  @include mq($from: xs) {
+    background-color: blue;
+  }
+
+  @include mq($from: s) {
+    background-color: green;
+  }
+
+  @include mq($from: m) {
+    background-color: yellow;
+  }
+
+  @include mq($from: l) {
+    background-color: teal;
+  }
+
+  @include mq($from: xl) {
+    background-color: peru;
+  }
+}
+
 h1,
 h2,
 h3,

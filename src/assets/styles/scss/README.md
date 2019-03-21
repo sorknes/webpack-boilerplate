@@ -176,7 +176,7 @@ Mixins are available for every Sass Flexbox Grid set of delarations.
 
 ### Helper classes
 
-Helper classes are available to remove padding from nested grid.
+Helper classes are available to remove padding from (nested) grid.
 
 ```scss
 // Remove padding-left and padding-right

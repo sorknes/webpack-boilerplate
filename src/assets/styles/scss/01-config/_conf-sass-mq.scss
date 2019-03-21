@@ -1,0 +1,64 @@
+// -------------------------------------------------------------------------------
+//
+// Description: The mq() is a Sass mixin that helps you compose media queries in
+// an elegant way.
+//
+// Doc: http://sass-mq.github.io/sass-mq/
+// GitHub: https://github.com/sass-mq/sass-mq
+// ===============================================================================
+//
+
+// To enable support for browsers that do not support @media queries,
+// (IE <= 8, Firefox <= 3, Opera <= 9) set $mq-responsive to false
+// Create a separate stylesheet served exclusively to these browsers,
+// meaning @media queries will be rasterized, relying on the cascade itself
+$mq-responsive: true;
+
+// Name your breakpoints in a way that creates a ubiquitous language
+// across team members. It will improve communication between
+// stakeholders, designers, developers, and testers.
+
+// Breakpoints in px and em
+// -------------------------------------------------------------------------------
+// xs: 320px / 20em
+// s: 576px / 36em
+// m: 768px / 48em
+// l: 992px / 62em
+// xl: 1200px / 75em
+
+$mq-breakpoints: (
+  xs: map-get($BREAKPOINT, BREAKPOINT_XS),
+  s: map-get($BREAKPOINT, BREAKPOINT_S),
+  m: map-get($BREAKPOINT, BREAKPOINT_M),
+  l: map-get($BREAKPOINT, BREAKPOINT_L),
+  xl: map-get($BREAKPOINT, BREAKPOINT_S),
+);
+
+// Used for computer screens, tablets, smart-phones etc.
+$mq-media-type: 'screen';
+
+// Example usage
+// -------------------------------------------------------------------------------
+// .class-name {
+//   @include mq($from: s, $until: m) {
+//     background-color: red;
+//   }
+//
+//   @include mq($from: m) {
+//     background-color: green;
+//   }
+// }
+
+// Compiles to
+// -------------------------------------------------------------------------------
+// @media (min-width: 36em) and (max-width: 48em) {
+//   .class-name {
+//     background: red;
+//   }
+// }
+//
+// @media (min-width: 48em) {
+//   .class-name {
+//     background: green;
+//   }
+// }

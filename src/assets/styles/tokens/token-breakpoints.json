@@ -1,9 +1,9 @@
 {
   "BREAKPOINT": {
-    "BREAKPOINT_XS": "320px",
-    "BREAKPOINT_S": "576px",
-    "BREAKPOINT_M": "768px",
-    "BREAKPOINT_L": "992px",
-    "BREAKPOINT_XL": "1200px"
+    "BREAKPOINT_XS": "20em",
+    "BREAKPOINT_S": "36em",
+    "BREAKPOINT_M": "48em",
+    "BREAKPOINT_L": "62em",
+    "BREAKPOINT_XL": "75em"
   }
 }

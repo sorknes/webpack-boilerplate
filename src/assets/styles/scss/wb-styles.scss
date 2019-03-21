@@ -55,15 +55,25 @@ h6 {
 }
 
 .wb-svg-test {
-  width: 200px;
-  height: 200px;
+  width: rem(200px);
+  height: rem(200px);
   background-image: url('../../images/icons/icon-people.svg');
   background-size: cover;
 }
 
 .wb-image-test {
-  width: 400px;
-  height: 400px;
+  width: rem(400px);
+  height: rem(400px);
   background-image: url('../../images/image.png');
   background-size: cover;
+
+  @include pt(1);
+  @include pr(2);
+  @include pb(3);
+  @include pl(4);
+
+  @include mt(1);
+  @include mr(2);
+  @include mb(3);
+  @include ml(4);
 }

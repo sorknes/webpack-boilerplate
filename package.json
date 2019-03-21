@@ -52,6 +52,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "sanitize.css": "^8.0.0"
+    "sanitize.css": "^8.0.0",
+    "sass-mq": "^5.0.0"
   }
 }

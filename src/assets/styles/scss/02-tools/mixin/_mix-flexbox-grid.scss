@@ -11,6 +11,8 @@
   max-width: 1200px;
   width: calc(100% - 2rem);
   box-sizing: content-box;
+
+  // FIXME: width: 100% on mobile after sass-mq is in place
 }
 
 @mixin container-fluid() {

@@ -1,0 +1,31 @@
+// -------------------------------------------------------------------------------
+//
+// Description: Sets width/height of icons. Matches $type-scale
+// ===============================================================================
+//
+
+@mixin icon-scale($scale, $map: $icon-scale) {
+  width: rem(map-fetch($map, $scale width));
+  height: rem(map-fetch($map, $scale height));
+
+  svg {
+    width: rem(map-fetch($map, $scale width));
+    height: rem(map-fetch($map, $scale height));
+  }
+}
+
+@mixin icon-scale-bg($scale, $map: $icon-scale) {
+  width: rem(map-fetch($map, $scale width));
+  height: rem(map-fetch($map, $scale height));
+  background-size: cover;
+}
+
+// Example usage
+// -------------------------------------------------------------------------------
+// .class-name {
+//   @include icon-scale(m);
+// }
+//
+// .class-name {
+//   @include icon-scale-bg(m);
+// }

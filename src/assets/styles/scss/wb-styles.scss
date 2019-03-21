@@ -61,6 +61,19 @@ h6 {
   background-size: cover;
 }
 
+.wb-svg-mixin {
+  background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_90);
+
+  @include icon-scale(xxxl);
+}
+
+.wb-svg-mixin-bg {
+  background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_80);
+  background-image: url('../../images/icons/icon-people.svg');
+
+  @include icon-scale-bg(xxxl);
+}
+
 .wb-image-test {
   width: rem(400px);
   height: rem(400px);

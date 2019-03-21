@@ -1,0 +1,40 @@
+// -------------------------------------------------------------------------------
+//
+// Description: Sets width/height of icons. Matches $type-scale
+// ===============================================================================
+//
+
+$icon-scale: (
+  xxs: (
+    width: 4px * 3,
+    height: 4px * 3,
+  ),
+  xs: (
+    width: 4px * 4,
+    height: 4px * 4,
+  ),
+  s: (
+    width: 4px * 5,
+    height: 4px * 5,
+  ),
+  m: (
+    width: 4px * 6,
+    height: 4px * 6,
+  ),
+  l: (
+    width: 4px * 7,
+    height: 4px * 7,
+  ),
+  xl: (
+    width: 4px * 8,
+    height: 4px * 8,
+  ),
+  xxl: (
+    width: 4px * 9,
+    height: 4px * 9,
+  ),
+  xxxl: (
+    width: 4px * 10,
+    height: 4px * 10,
+  ),
+);

@@ -52,20 +52,16 @@ body {
     background-color: blue;
   }
 
-  @include mq($from: s) {
+  @include mq($from: sm) {
     background-color: green;
   }
 
-  @include mq($from: m) {
+  @include mq($from: md) {
     background-color: yellow;
   }
 
-  @include mq($from: l) {
+  @include mq($from: lg) {
     background-color: teal;
-  }
-
-  @include mq($from: xl) {
-    background-color: peru;
   }
 }
 
@@ -76,6 +72,58 @@ h4,
 h5,
 h6 {
   @include font-family(FONT_FAMILY_SECONDARY);
+}
+
+.wb-breakpoint-test {
+  position: relative;
+  background-color: red;
+
+  &::before {
+    width: 100px;
+    height: 40px;
+    margin-left: -50px;
+    text-align: center;
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+
+    @include mq($from: xs) {
+      content: '576px';
+    }
+
+    @include mq($from: sm) {
+      content: '768px';
+    }
+
+    @include mq($from: md) {
+      content: '992px';
+    }
+
+    @include mq($from: lg) {
+      content: '1200px';
+    }
+  }
+
+  @include mq($from: xs) {
+    content: '576px';
+    background-color: blue;
+  }
+
+  @include mq($from: sm) {
+    content: '768px';
+    background-color: green;
+  }
+
+  @include mq($from: md) {
+    content: '992px';
+    background-color: yellow;
+  }
+
+  @include mq($from: lg) {
+    content: '1200px';
+    background-color: teal;
+  }
 }
 
 .wb-svg-test {

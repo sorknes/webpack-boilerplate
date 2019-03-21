@@ -18,20 +18,11 @@ $mq-responsive: true;
 // across team members. It will improve communication between
 // stakeholders, designers, developers, and testers.
 
-// Breakpoints in px and em
-// -------------------------------------------------------------------------------
-// xs: 320px / 20em
-// s: 576px / 36em
-// m: 768px / 48em
-// l: 992px / 62em
-// xl: 1200px / 75em
-
 $mq-breakpoints: (
   xs: map-get($BREAKPOINT, BREAKPOINT_XS),
-  s: map-get($BREAKPOINT, BREAKPOINT_S),
-  m: map-get($BREAKPOINT, BREAKPOINT_M),
-  l: map-get($BREAKPOINT, BREAKPOINT_L),
-  xl: map-get($BREAKPOINT, BREAKPOINT_XL),
+  sm: map-get($BREAKPOINT, BREAKPOINT_SM),
+  md: map-get($BREAKPOINT, BREAKPOINT_MD),
+  lg: map-get($BREAKPOINT, BREAKPOINT_LG),
 );
 
 // Used for computer screens, tablets, smart-phones etc.

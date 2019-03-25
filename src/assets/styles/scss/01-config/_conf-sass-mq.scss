@@ -27,29 +27,3 @@ $mq-breakpoints: (
 
 // Used for computer screens, tablets, smart-phones etc.
 $mq-media-type: 'screen';
-
-// Example usage
-// -------------------------------------------------------------------------------
-// .class-name {
-//   @include mq($from: s, $until: m) {
-//     background-color: red;
-//   }
-//
-//   @include mq($from: m) {
-//     background-color: green;
-//   }
-// }
-
-// Compiles to
-// -------------------------------------------------------------------------------
-// @media (min-width: 36em) and (max-width: 48em) {
-//   .class-name {
-//     background: red;
-//   }
-// }
-//
-// @media (min-width: 48em) {
-//   .class-name {
-//     background: green;
-//   }
-// }

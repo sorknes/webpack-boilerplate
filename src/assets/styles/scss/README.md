@@ -189,3 +189,34 @@ Helper classes are available to remove padding from (nested) grid.
   padding: 0;
 }
 ```
+
+## SASS-MQ (Media Query)
+
+[mq()](https://github.com/sass-mq/sass-mq) is a Sass mixin that helps you
+compose media queries in an elegant way.
+
+```scss
+.class-name {
+  @include mq($from: s, $until: m) {
+    background-color: red;
+  }
+
+  @include mq($from: m) {
+    background-color: green;
+  }
+}
+
+// Compiles to
+// -------------------------------------------------------------------------------
+@media (min-width: 36em) and (max-width: 48em) {
+  .class-name {
+    background: red;
+  }
+}
+
+@media (min-width: 48em) {
+  .class-name {
+    background: green;
+  }
+}
+```

@@ -315,6 +315,14 @@ Adjust font and line-height values.
 }
 ```
 
+## Visually hidden
+
+```scss
+.class-name {
+  @include buf-is-vhidden();
+}
+```
+
 ## Spacing
 
 ```scss

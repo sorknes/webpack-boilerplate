@@ -295,6 +295,14 @@ Adjust font and line-height values.
 }
 ```
 
+## Hidden element
+
+```scss
+.class-name {
+  @include buf-hidden();
+}
+```
+
 ## Icon scale
 
 ```scss

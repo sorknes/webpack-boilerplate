@@ -19,13 +19,3 @@
   height: rem(map-fetch($map, $scale height));
   background-size: cover;
 }
-
-// Example usage
-// -------------------------------------------------------------------------------
-// .class-name {
-//   @include icon-scale(m);
-// }
-//
-// .class-name {
-//   @include icon-scale-bg(m);
-// }

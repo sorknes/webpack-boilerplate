@@ -7,9 +7,3 @@
 @mixin font-weight($weight) {
   font-weight: map-get($FONT_WEIGHT, $weight);
 }
-
-// Example usage
-// -------------------------------------------------------------------------------
-// .class-name {
-//   @include font-weight(FONT_WEIGHT_REGULAR);
-// }

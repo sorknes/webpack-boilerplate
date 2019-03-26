@@ -7,9 +7,3 @@
 @mixin font-family($family) {
   font-family: map-get($FONT_FAMILY, $family);
 }
-
-// Example usage
-// -------------------------------------------------------------------------------
-// .class-name {
-//   @include font-family(FONT_FAMILY_PRIMARY);
-// }

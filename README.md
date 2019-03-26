@@ -10,3 +10,6 @@ A webpack boilerplate to help you kickstart all new projects.
 - Nunjucks
 - Webpack
 - NPM
+
+For a more thurogh documentation, plase go to my
+[GitBook space](https://knut-sorknes.gitbook.io/webpack-boilerplate/).

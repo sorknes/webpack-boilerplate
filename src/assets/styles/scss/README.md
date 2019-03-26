@@ -229,19 +229,27 @@ A mixin for setting border(s) on elemets.
 // Border all sides
 // -------------------------------------------------------------------------------
 .class-name {
-  @include buf-border($border-width-small, $border-solid, teal, all);
+  @include border($border-width-small, $border-solid, teal, all);
 }
 
 // All sides minus bottom
 // -------------------------------------------------------------------------------
 .class-name {
-  @include buf-border($border-width-small, $border-dashed, teal, all, bottom);
+  @include border($border-width-small, $border-dashed, teal, all, bottom);
 }
 
 // Top only
 // -------------------------------------------------------------------------------
 .class-name {
-  @include buf-border($border-width-small, $border-dotted, teal, top);
+  @include border($border-width-small, $border-dotted, teal, top);
+}
+```
+
+## Center element
+
+```scss
+.class-name {
+  @include center();
 }
 ```
 

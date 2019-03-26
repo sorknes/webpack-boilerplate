@@ -333,11 +333,11 @@ Adjust font and line-height values.
 
 ## Placeholder
 
+The @content directive, allows us to pass a content block into a mixin.
+
 ```scss
-.class-name {
-  @include placeholder {
-    color: black;
-  }
+@include placeholder {
+  color: black;
 }
 ```
 

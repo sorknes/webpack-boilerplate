@@ -299,7 +299,7 @@ Adjust font and line-height values.
 
 ```scss
 .class-name {
-  @include buf-hidden();
+  @include hidden();
 }
 ```
 
@@ -319,7 +319,7 @@ Adjust font and line-height values.
 
 ```scss
 .class-name {
-  @include buf-is-vhidden();
+  @include is-vhidden();
 }
 ```
 
@@ -349,6 +349,17 @@ two lines of code every time you use this.
 ```scss
 .class-name::after {
   @include pseudo;
+}
+```
+
+## Push auto
+
+To quickly centre a block element without having to worry about if there is any
+top or bottom margin already applied.
+
+```scss
+.class-name {
+  @include push-auto;
 }
 ```
 

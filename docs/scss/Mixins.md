@@ -1,7 +1,6 @@
-# How to use the SCSS
+# Mixins
 
-Here are some tips and tricks on how to use the Grid, helper classes and much
-more.
+Here's a list of all available mixins.
 
 ## SASS-MQ (Media Query)
 

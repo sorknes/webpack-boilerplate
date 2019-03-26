@@ -7,8 +7,6 @@
     "LINE_HEIGHT_L": "34px",
     "LINE_HEIGHT_XL": "40px",
     "LINE_HEIGHT_XXL": "50px",
-    "LINE_HEIGHT_XXXL": "60px",
-    "LINE_HEIGHT_XXXXL": "70px",
-    "LINE_HEIGHT_XXXXXL": "82px"
+    "LINE_HEIGHT_XXXL": "60px"
   }
 }

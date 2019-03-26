@@ -1,0 +1,33 @@
+// -------------------------------------------------------------------------------
+//
+// Description: Typographic scale: 1.250 "Major Third" (http://type-scale.com/)
+// line-height is calculated using the golden ratio: https://pearsonified.com/typography/
+// ===============================================================================
+//
+
+$line-height: (
+  xxs: (
+    line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_XXS),
+  ),
+  xs: (
+    line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_XS),
+  ),
+  s: (
+    line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_S),
+  ),
+  m: (
+    line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_M),
+  ),
+  l: (
+    line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_L),
+  ),
+  xl: (
+    line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_XL),
+  ),
+  xxl: (
+    line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_XXL),
+  ),
+  xxxl: (
+    line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_XXXL),
+  ),
+);

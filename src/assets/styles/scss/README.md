@@ -323,6 +323,14 @@ Adjust font and line-height values.
 }
 ```
 
+## Line height
+
+```scss
+.class-name {
+  @include line-height(xl);
+}
+```
+
 ## Spacing
 
 ```scss

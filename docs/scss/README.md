@@ -341,6 +341,17 @@ The @content directive, allows us to pass a content block into a mixin.
 }
 ```
 
+## Pseudo
+
+When using ::before and ::after you'll always need these three, so we're saving
+two lines of code every time you use this.
+
+```scss
+.class-name::after {
+  @include pseudo;
+}
+```
+
 ## Spacing
 
 ```scss

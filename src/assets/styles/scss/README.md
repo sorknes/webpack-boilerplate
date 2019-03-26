@@ -253,6 +253,14 @@ A mixin for setting border(s) on elemets.
 }
 ```
 
+## Clearfix
+
+```scss
+.class-name {
+  @include clearfix();
+}
+```
+
 ## Establish Baseline
 
 Adjust font and line-height values.

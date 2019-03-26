@@ -1,4 +1,4 @@
-# How to use tokens
+# Tokens
 
 Here's a list of all available design tokens, with examples how to use them in
 your CSS file.

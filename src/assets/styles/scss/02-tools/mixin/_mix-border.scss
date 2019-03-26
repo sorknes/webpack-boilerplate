@@ -1,0 +1,24 @@
+// -------------------------------------------------------------------------------
+//
+// Description: Add border to element
+// ===============================================================================
+//
+
+@mixin buf-border(
+  $border-size: $border-width-small,
+  $border-pattern: $border-solid,
+  $border-color: black,
+  $border-position: all,
+  $border-clear: none
+) {
+  @if $border-position == all {
+    border: $border-size $border-pattern $border-color;
+  } @else {
+    border-#{$border-position}: $border-size $border-pattern $border-color;
+  }
+  @if $border-clear == none {
+    $border-position: all;
+  } @else {
+    border-#{$border-clear}: none;
+  }
+}

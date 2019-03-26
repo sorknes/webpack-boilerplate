@@ -220,3 +220,89 @@ compose media queries in an elegant way.
   }
 }
 ```
+
+## Border
+
+A mixin for setting border(s) on elemets.
+
+```scss
+// Border all sides
+// -------------------------------------------------------------------------------
+.class-name {
+  @include buf-border($border-width-small, $border-solid, teal, all);
+}
+
+// All sides minus bottom
+// -------------------------------------------------------------------------------
+.class-name {
+  @include buf-border($border-width-small, $border-dashed, teal, all, bottom);
+}
+
+// Top only
+// -------------------------------------------------------------------------------
+.class-name {
+  @include buf-border($border-width-small, $border-dotted, teal, top);
+}
+```
+
+## Establish Baseline
+
+Adjust font and line-height values.
+
+```scss
+.class-name {
+  @include establish-baseline;
+}
+```
+
+## Font Family
+
+```scss
+.class-name {
+  @include font-family(FONT_FAMILY_PRIMARY);
+}
+```
+
+## Font smoothing
+
+```scss
+.class-name {
+  @include font-smoothing();
+}
+```
+
+## Font weight
+
+```scss
+.class-name {
+  @include font-weight(FONT_WEIGHT_REGULAR);
+}
+```
+
+## Icon scale
+
+```scss
+.class-name {
+  @include icon-scale(m);
+}
+
+.class-name {
+  @include icon-scale-bg(m);
+}
+```
+
+## Spacing
+
+```scss
+// p = padding t = top
+// -------------------------------------------------------------------------------
+.class-name {
+  @include pt(4);
+}
+
+// m = margin t = bottom
+// -------------------------------------------------------------------------------
+.class-name {
+  @include mb(4);
+}
+```

@@ -334,8 +334,10 @@ Adjust font and line-height values.
 ## Placeholder
 
 ```scss
-@include placeholder {
-  color: black;
+.class-name {
+  @include placeholder {
+    color: black;
+  }
 }
 ```
 

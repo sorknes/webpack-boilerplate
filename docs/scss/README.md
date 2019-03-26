@@ -223,7 +223,7 @@ compose media queries in an elegant way.
 
 ## Border
 
-A mixin for setting border(s) on elemets.
+Add border to element.
 
 ```scss
 // Border all sides
@@ -247,6 +247,8 @@ A mixin for setting border(s) on elemets.
 
 ## Center element
 
+Align element to center, and center align text.
+
 ```scss
 .class-name {
   @include center();
@@ -254,6 +256,9 @@ A mixin for setting border(s) on elemets.
 ```
 
 ## Clearfix
+
+This is a simpler version of the well known clearfix hack made by Nicolas
+Gallagher. This version is simplified for more modern browsers.
 
 ```scss
 .class-name {
@@ -273,6 +278,8 @@ Adjust font and line-height values.
 
 ## Font Family
 
+Choose between different sets of font-families.
+
 ```scss
 .class-name {
   @include font-family(FONT_FAMILY_PRIMARY);
@@ -280,6 +287,8 @@ Adjust font and line-height values.
 ```
 
 ## Font smoothing
+
+Improving font rendering with CSS
 
 ```scss
 .class-name {
@@ -297,6 +306,8 @@ Adjust font and line-height values.
 
 ## Hidden element
 
+An easy way to hide an element from both screenreaders and browsers
+
 ```scss
 .class-name {
   @include hidden();
@@ -304,6 +315,8 @@ Adjust font and line-height values.
 ```
 
 ## Icon scale
+
+Sets width/height of icons. Matches \$type-scale
 
 ```scss
 .class-name {
@@ -317,6 +330,8 @@ Adjust font and line-height values.
 
 ## Visually hidden
 
+An easy way to hide text from screen but not from screen-readers.
+
 ```scss
 .class-name {
   @include is-vhidden();
@@ -324,6 +339,12 @@ Adjust font and line-height values.
 ```
 
 ## Line height
+
+This mixin takes a parameter for line-height (sass-map: \$line-height). It then
+uses the function map-fetch to reach deep key:value pairs within this map.
+
+Finally it outputs the correct pairing of font-size and line-height, using the
+compass-mixin `line-height`.
 
 ```scss
 .class-name {
@@ -364,6 +385,9 @@ top or bottom margin already applied.
 ```
 
 ## Spacing
+
+SCSS classes/mixins for responsive margins and padding.
+[Resource used](https://github.com/digitaledgeit/sass-spacing)
 
 ```scss
 // p = padding t = top

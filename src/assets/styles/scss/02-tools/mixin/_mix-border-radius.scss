@@ -5,7 +5,7 @@
 //
 
 @mixin border-radius(
-  $top-left: $radius-small,
+  $top-left: map-get($BORDER_RADIUS, BORDER_RADIUS_S),
   $top-right: null,
   $bottom-right: null,
   $bottom-left: null

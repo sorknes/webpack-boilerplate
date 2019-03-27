@@ -65,13 +65,13 @@ Adds border-radius to element.
 // All corners
 // -------------------------------------------------------------------------------
 .class-name {
-  @include buf-border-radius($radius-small);
+  @include border-radius(map-get($BORDER_RADIUS, BORDER_RADIUS_S));
 }
 
 // Custom corners: top-left, top-right, bottom-right, bottom-left
 // -------------------------------------------------------------------------------
 .class-name {
-  @include buf-border-radius(
+  @include border-radius(
     $radius-small,
     $radius-small,
     $radius-small,
@@ -82,7 +82,7 @@ Adds border-radius to element.
 // Available options
 // -------------------------------------------------------------------------------
 .class-name {
-  @include buf-border-radius(
+  @include border-radius(
     $radius-none,
     $radius-small,
     $radius-medium,
@@ -261,6 +261,6 @@ A mixin that helps text-alignment
 
 ```scss
 .class-name {
-  @include buf-text-align(start);
+  @include text-align(start);
 }
 ```

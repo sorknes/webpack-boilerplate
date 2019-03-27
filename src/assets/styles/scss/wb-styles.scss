@@ -164,3 +164,12 @@ h6 {
   @include mb(3);
   @include ml(4);
 }
+
+.wb-test-border-radius {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+
+  @include text-align(center);
+  @include border-radius(map-get($BORDER_RADIUS, BORDER_RADIUS_XXXL));
+}

@@ -141,6 +141,10 @@ h6 {
   @include icon-scale(xxxl);
 }
 
+.wb-link {
+  @include text-underline(red, yellow, blue);
+}
+
 .wb-svg-mixin-bg {
   background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_80);
   background-image: url('../../images/icons/icon-people.svg');

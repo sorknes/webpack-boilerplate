@@ -278,7 +278,7 @@ separate them if you want to do so.
   @include text-underline();
 }
 
-// Color, color-hover, color-focus
+// Link & visited, hover & focus
 // -------------------------------------------------------------------------------
 .class-name {
   @include text-underline(teal, peru, olive);

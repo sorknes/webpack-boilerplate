@@ -252,7 +252,7 @@ SCSS classes/mixins for responsive margins and padding.
 
 ## Text align
 
-A mixin that helps text-alignment
+A mixin that helps text-alignment.
 
 - text-align: start; and text-align: end; allows the browser to decide how to
 - best align text based on the user's LTR or RTL preference. Browser support is
@@ -262,5 +262,25 @@ A mixin that helps text-alignment
 ```scss
 .class-name {
   @include text-align(start);
+}
+```
+
+## Text underline
+
+The idea behind this mixin is that no defaults are declared in the arguments so
+that we are “forced” in a friendly way to declare all 4 states of our links.
+
+The :hover and :focus pseudo-classes are usually declared together. Feel free to
+separate them if you want to do so.
+
+```scss
+.class-name {
+  @include text-underline();
+}
+
+// Color, color-hover, color-focus
+// -------------------------------------------------------------------------------
+.class-name {
+  @include text-underline(teal, peru, olive);
 }
 ```

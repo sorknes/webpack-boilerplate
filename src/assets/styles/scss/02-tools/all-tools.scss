@@ -4,6 +4,12 @@
 // ===============================================================================
 //
 
+// Function
+// -------------------------------------------------------------------------------
+@import './function/func-map-fetch';
+@import './function/func-pxtoem';
+@import './function/func-pxtorem';
+
 // Mixin
 // -------------------------------------------------------------------------------
 @import './mixin/mix-border';
@@ -25,9 +31,4 @@
 @import './mixin/mix-push-auto';
 @import './mixin/mix-spacing';
 @import './mixin/mix-text-align';
-
-// Function
-// -------------------------------------------------------------------------------
-@import './function/func-map-fetch';
-@import './function/func-pxtoem';
-@import './function/func-pxtorem';
+@import './mixin/mix-text-underline';

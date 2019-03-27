@@ -1,0 +1,9 @@
+// -------------------------------------------------------------------------------
+//
+// Description: Transition with type and duration
+// ===============================================================================
+//
+
+@mixin transition($transition-type, $transition-default) {
+  transition: $transition-type $transition-default ease-in-out;
+}

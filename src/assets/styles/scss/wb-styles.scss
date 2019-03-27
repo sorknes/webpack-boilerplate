@@ -143,6 +143,7 @@ h6 {
 
 .wb-link {
   @include text-underline(red, yellow, blue);
+  @include transition(all, map-get($DURATION, DURATION_DEFAULT));
 }
 
 .wb-svg-mixin-bg {

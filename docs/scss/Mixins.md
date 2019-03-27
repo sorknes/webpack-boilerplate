@@ -284,3 +284,13 @@ separate them if you want to do so.
   @include text-underline(red, yellow, blue);
 }
 ```
+
+## Transition
+
+Transition with type and duration.
+
+```scss
+.class-name {
+  @include transition(all, map-get($DURATION, DURATION_DEFAULT));
+}
+```

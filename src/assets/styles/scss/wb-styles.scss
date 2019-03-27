@@ -176,5 +176,6 @@ h6 {
   background-color: white;
 
   @include text-align(center);
+  @include truncate(map-get($mq-breakpoints, md));
   @include border-radius(map-get($BORDER_RADIUS, BORDER_RADIUS_XXXL));
 }

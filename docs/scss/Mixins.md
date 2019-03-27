@@ -294,3 +294,16 @@ Transition with type and duration.
   @include transition(all, map-get($DURATION, DURATION_DEFAULT));
 }
 ```
+
+## Truncate
+
+Adding truncation (shorten (something) by cutting off the top or the end) to an
+element isn't as simple as it should be, although it is with this handy time
+saver meaning when you include the mixin, you only have to specify your boundry
+with a max width value, happy days!
+
+```scss
+.class-name {
+  @include truncate(map-get($mq-breakpoints, md));
+}
+```

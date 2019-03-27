@@ -5,5 +5,5 @@
 //
 
 export default function() {
-  console.log('Import component works!')
+  console.log('')
 }

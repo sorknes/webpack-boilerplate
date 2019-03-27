@@ -59,7 +59,7 @@ Add border to element.
 
 ## Border radius
 
-Adds border-radius to element
+Adds border-radius to element.
 
 ```scss
 // All corners
@@ -247,5 +247,20 @@ SCSS classes/mixins for responsive margins and padding.
 // -------------------------------------------------------------------------------
 .class-name {
   @include mb(4);
+}
+```
+
+## Text align
+
+A mixin that helps text-alignment
+
+- text-align: start; and text-align: end; allows the browser to decide how to
+- best align text based on the user's LTR or RTL preference. Browser support is
+- quite good, but to be sure, we use a backup solution for `start`and `end`,
+- using double declarations, hence falling back to `left`and `right`.
+
+```scss
+.class-name {
+  @include buf-text-align(start);
 }
 ```

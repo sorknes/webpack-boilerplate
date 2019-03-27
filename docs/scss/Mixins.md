@@ -57,6 +57,41 @@ Add border to element.
 }
 ```
 
+## Border radius
+
+Adds border-radius to element
+
+```scss
+// All corners
+// -------------------------------------------------------------------------------
+.class-name {
+  @include buf-border-radius($radius-small);
+}
+
+// Custom corners: top-left, top-right, bottom-right, bottom-left
+// -------------------------------------------------------------------------------
+.class-name {
+  @include buf-border-radius(
+    $radius-small,
+    $radius-small,
+    $radius-small,
+    $radius-small
+  );
+}
+
+// Available options
+// -------------------------------------------------------------------------------
+.class-name {
+  @include buf-border-radius(
+    $radius-none,
+    $radius-small,
+    $radius-medium,
+    $radius-large,
+    $radius-full
+  );
+}
+```
+
 ## Center element
 
 Align element to center, and center align text.

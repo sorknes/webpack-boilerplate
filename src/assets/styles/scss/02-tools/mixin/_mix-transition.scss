@@ -4,6 +4,10 @@
 // ===============================================================================
 //
 
-@mixin transition($transition-type, $transition-default) {
-  transition: $transition-type $transition-default ease-in-out;
+@mixin transition($transition-property, $scale, $map: $duration) {
+  $transition-duration: map-fetch($map, $scale transition-duration);
+
+  transition-property: $transition-property;
+  transition-duration: $transition-duration;
+  transition-timing-function: ease-in-out;
 }

@@ -48,7 +48,8 @@
 body {
   background-color: red;
 
-  @include line-height(LINE_HEIGHT_XXXL);
+  @include font-family(FONT_FAMILY_PRIMARY);
+  @include line-height(LINE_HEIGHT_S);
 
   @include mq($from: xs) {
     background-color: blue;
@@ -143,7 +144,7 @@ h6 {
 
 .wb-link {
   @include text-underline(red, yellow, blue);
-  @include transition(all, map-get($DURATION, DURATION_DEFAULT));
+  @include transition(all, DURATION_DEFAULT);
 }
 
 .wb-svg-mixin-bg {
@@ -175,8 +176,13 @@ h6 {
   height: 400px;
   background-color: white;
 
-  @include text-align(center);
-  @include truncate(map-get($BREAKPOINT, BREAKPOINT_XS));
+  @include text-align(CENTER);
   @include type-scale(FONT_SIZE_M);
-  @include border-radius(map-get($BORDER_RADIUS, BORDER_RADIUS_XXXL));
+  @include border-radius(BORDER_RADIUS_XXXL);
+  @include border(
+    $border-width-small,
+    $border-solid,
+    teal,
+    all
+  ); // TODO: Setup map-fetch
 }

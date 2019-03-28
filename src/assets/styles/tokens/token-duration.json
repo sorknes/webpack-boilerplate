@@ -6,6 +6,6 @@
     "DURATION_DEFAULT": "300ms",
     "DURATION_EASY": "500ms",
     "DURATION_SLOW": "700ms",
-    "DURATION_SUPER_SLOW": "0ms"
+    "DURATION_SUPER_SLOW": "1000ms"
   }
 }

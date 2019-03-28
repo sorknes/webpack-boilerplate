@@ -8,7 +8,8 @@
 
 console.log(
   `
-  Hi there!
+  Hi there curious stranger!
+  If you have any feedback, questions or just up for a chatt, plase don't hesitate to contact me.
 
   /##   /##
  | ##  /##/
@@ -20,8 +21,10 @@ console.log(
  |__/  \\__/
  
  Developed by Knut A. Sorknes
- https://github.com/sorknes
- www.linkedin.com/in/knut-sorknes
+ Email: knut.sorknes@gmail.com
+
+ GitHub: https://github.com/sorknes
+ LinkedIn: https://www.linkedin.com/in/knut-sorknes
  
  `
 )

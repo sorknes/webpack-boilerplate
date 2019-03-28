@@ -4,24 +4,6 @@
 // ===============================================================================
 //
 
-@mixin container() {
-  padding-left: 0;
-  padding-right: 0;
-  margin: 0 auto;
-  max-width: 1200px;
-  width: 100%;
-  box-sizing: content-box;
-
-  @include mq($from: sm) {
-    width: calc(100% - 2rem);
-  }
-}
-
-@mixin container-fluid() {
-  max-width: 100% !important;
-  width: 100% !important;
-}
-
 @mixin row($full-width: 'false') {
   box-sizing: border-box;
   margin: 0 auto;

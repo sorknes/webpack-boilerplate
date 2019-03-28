@@ -9,14 +9,6 @@
 // ===============================================================================
 //
 
-.container {
-  @include container();
-}
-
-.container-fluid {
-  @include container-fluid;
-}
-
 .row {
   @include row();
 }

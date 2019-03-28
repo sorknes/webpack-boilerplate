@@ -113,6 +113,20 @@ Gallagher. This version is simplified for more modern browsers.
 }
 ```
 
+## Container
+
+Container mixin
+
+```scss
+.class-name {
+  @include container;
+}
+
+.class-name {
+  @include container-fluid;
+}
+```
+
 ## Establish Baseline
 
 Adjust font and line-height values.

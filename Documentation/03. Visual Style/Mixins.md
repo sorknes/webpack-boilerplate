@@ -307,3 +307,17 @@ with a max width value, happy days!
   @include truncate(map-get($mq-breakpoints, md));
 }
 ```
+
+## Type scale
+
+This mixin takes a parameter for typographic scale (sass-map: \$type-scale). It
+then uses the function map-fetch to reach deep key:value pairs within this map.
+
+Finally it outputs the correct pairing of font-size and line-height, using the
+compass-mixin `buf-type-scale`.
+
+```scss
+.class-name {
+  @include type-scale(FONT_SIZE_M);
+}
+```

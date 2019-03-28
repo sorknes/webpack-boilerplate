@@ -1,8 +1,9 @@
 // -------------------------------------------------------------------------------
 //
-// Description: Contains predefined mixins, such as placeholder, border,
-// border-radius etc
+// Description: Style input placeholder txt
 // ===============================================================================
 //
 
-@import './placeholder';
+@include placeholder {
+  color: map-get($COLOR_GREY, COLOR_GREY_TINT_25);
+}

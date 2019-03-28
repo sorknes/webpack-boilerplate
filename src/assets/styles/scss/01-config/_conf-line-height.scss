@@ -6,28 +6,28 @@
 //
 
 $line-height: (
-  xxs: (
+  LINE_HEIGHT_XXS: (
     line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_XXS),
   ),
-  xs: (
+  LINE_HEIGHT_XS: (
     line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_XS),
   ),
-  s: (
+  LINE_HEIGHT_S: (
     line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_S),
   ),
-  m: (
+  LINE_HEIGHT_M: (
     line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_M),
   ),
-  l: (
+  LINE_HEIGHT_L: (
     line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_L),
   ),
-  xl: (
+  LINE_HEIGHT_XL: (
     line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_XL),
   ),
-  xxl: (
+  LINE_HEIGHT_XXL: (
     line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_XXL),
   ),
-  xxxl: (
+  LINE_HEIGHT_XXXL: (
     line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_XXXL),
   ),
 );

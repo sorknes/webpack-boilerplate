@@ -1,0 +1,53 @@
+// -------------------------------------------------------------------------------
+//
+// Description: Base icon styling
+// ===============================================================================
+//
+
+.icon {
+  display: block;
+}
+
+.icon--inline {
+  display: inline-block;
+}
+
+.icon--xxs {
+  @include icon-scale(ICON_SCALE_XXS);
+}
+
+.icon--xs {
+  @include icon-scale(ICON_SCALE_XS);
+}
+
+.icon--s {
+  @include icon-scale(ICON_SCALE_S);
+}
+
+.icon--m {
+  @include icon-scale(ICON_SCALE_M);
+}
+
+.icon--l {
+  @include icon-scale(ICON_SCALE_L);
+}
+
+.icon--xl {
+  @include icon-scale(ICON_SCALE_XL);
+}
+
+.icon--xxl {
+  @include icon-scale(ICON_SCALE_XXL);
+}
+
+.icon--xxxl {
+  @include icon-scale(ICON_SCALE_XXXL);
+}
+
+.icon--light {
+  fill: map-get($COLOR_GREY, COLOR_GREY_TINT_100);
+}
+
+.icon--dark {
+  fill: map-get($COLOR_GREY, COLOR_GREY_TINT_0);
+}

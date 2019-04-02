@@ -33,15 +33,19 @@
 // -------------------------------------------------------------------------------
 @import './04-components/all-components';
 
-// 05. Contains predefined mixins, such as placeholder, border, border-radius etc
+// 05. Contains all you need to manage a flexbox grid
 // -------------------------------------------------------------------------------
-@import './05-utilities/all-utilities';
+@import './05-layout/all-layout';
 
-// 06. Contains print specific styling
+// 06. Contains predefined mixins, such as placeholder, border, border-radius etc
+// -------------------------------------------------------------------------------
+@import './06-utilities/all-utilities';
+
+// 07. Contains print specific styling
 // -------------------------------------------------------------------------------
 @import './wb-print';
 
-// 07. Contains all the CSS declarations, hacks and things we are not proud of in a shame file
+// 08. Contains all the CSS declarations, hacks and things we are not proud of in a shame file
 // -------------------------------------------------------------------------------
 @import './wb-shame';
 

@@ -1,8 +1,9 @@
 // -------------------------------------------------------------------------------
 //
-// Description: Contains global styles, such as normalize, fonts, colors, etc
+// Description: Layout
 // ===============================================================================
 //
 
-@import './font';
-@import './typography';
+@import './container';
+@import './flexbox-grid';
+@import './flexbox-visibility';

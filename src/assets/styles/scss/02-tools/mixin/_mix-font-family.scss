@@ -4,6 +4,10 @@
 // ===============================================================================
 //
 
-@mixin font-family($family) {
-  font-family: map-get($FONT_FAMILY, $family);
+// @mixin font-family($family) {
+//   font-family: map-get($FONT_FAMILY, $family);
+// }
+
+@mixin font-family($family-family) {
+  font-family: $family-family;
 }

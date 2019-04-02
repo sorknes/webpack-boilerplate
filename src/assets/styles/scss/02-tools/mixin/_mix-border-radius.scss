@@ -4,12 +4,12 @@
 // ===============================================================================
 //
 
-@mixin border-radius($scale, $map: $border-radius) {
-  $top-left: map-fetch($map, $scale border-radius);
-  $top-right: map-fetch($map, $scale border-radius);
-  $bottom-right: map-fetch($map, $scale border-radius);
-  $bottom-left: map-fetch($map, $scale border-radius);
-
+@mixin border-radius(
+  $top-left: $radius-small,
+  $top-right: null,
+  $bottom-right: null,
+  $bottom-left: null
+) {
   -webkit-border-radius: $top-left $top-right $bottom-right $bottom-left;
   -moz-border-radius: $top-left $top-right $bottom-right $bottom-left;
   -ms-border-radius: $top-left $top-right $bottom-right $bottom-left;

@@ -48,8 +48,8 @@
 body {
   background-color: red;
 
-  @include font-family(FONT_FAMILY_PRIMARY);
-  @include line-height(LINE_HEIGHT_S);
+  @include font-family(map-get($FONT_FAMILY, PRIMARY));
+  @include line-height(map-get($LINE_HEIGHT, DEFAULT));
 
   @include mq($from: xs) {
     background-color: blue;
@@ -144,7 +144,7 @@ h6 {
 
 .wb-link {
   @include text-underline(red, yellow, blue);
-  @include transition(all, DURATION_DEFAULT);
+  @include transition(all, map-get($DURATION, DEFAULT), ease-in-out);
 }
 
 .wb-svg-mixin-bg {
@@ -172,17 +172,17 @@ h6 {
 }
 
 .wb-test-border-radius {
-  width: 400px;
+  width: 800px;
   height: 400px;
   background-color: white;
 
-  @include text-align(CENTER);
+  @include text-align(ALIGN_CENTER);
   @include type-scale(FONT_SIZE_M);
-  @include border-radius(BORDER_RADIUS_XXXL);
-  @include border(
-    $border-width-small,
-    $border-solid,
-    teal,
-    all
-  ); // TODO: Setup map-fetch
+  @include border-radius(map-get($BORDER_RADIUS, DEFAULT));
+  // @include border(
+  //   $border-width-small,
+  //   $border-solid,
+  //   teal,
+  //   all
+  // ); // TODO: Setup map-fetch
 }

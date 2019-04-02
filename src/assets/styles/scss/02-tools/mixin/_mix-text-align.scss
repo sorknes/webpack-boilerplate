@@ -12,23 +12,23 @@
 //
 
 @mixin text-align($direction) {
-  @if $direction == 'START' {
+  @if $direction == 'ALIGN_START' {
     text-align: left;
     text-align: start;
-  } @else if $direction == 'END' {
+  } @else if $direction == 'ALIGN_END' {
     text-align: right;
     text-align: end;
-  } @else if $direction == 'LEFT' {
+  } @else if $direction == 'ALIGN_LEFT' {
     text-align: left;
-  } @else if $direction == 'RIGHT' {
+  } @else if $direction == 'ALIGN_RIGHT' {
     text-align: right;
-  } @else if $direction == 'CENTER' {
+  } @else if $direction == 'ALIGN_CENTER' {
     text-align: center;
-  } @else if $direction == 'JUSTIFY' {
+  } @else if $direction == 'ALIGN_JUSTIFY' {
     text-align: justify;
-  } @else if $direction == 'JUSTIFY_ALL' {
+  } @else if $direction == 'ALIGN_JUSTIFY_ALL' {
     text-align: justify-all;
-  } @else if $direction == 'MATCH_PARENT' {
+  } @else if $direction == 'ALIGN_MATCH_PARENT' {
     text-align: match-parent;
   }
 }

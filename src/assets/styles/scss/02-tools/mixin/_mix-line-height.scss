@@ -8,14 +8,12 @@
 // ===============================================================================
 //
 
-@mixin line-height($scale, $map: $line-height) {
-  $line-height: map-fetch($map, $scale line-height);
+// @mixin line-height($scale, $map: $line-height) {
+//   $line-height: map-fetch($map, $scale line-height);
 
+//   line-height: rem($line-height);
+// }
+
+@mixin line-height($line-height) {
   line-height: rem($line-height);
 }
-
-// Example usage
-// -------------------------------------------------------------------------------
-// .class-name {
-//   @include line-height(line_height_base);
-// }

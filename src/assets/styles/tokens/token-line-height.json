@@ -1,12 +1,12 @@
 {
   "LINE_HEIGHT": {
-    "LINE_HEIGHT_XXS": "14px",
-    "LINE_HEIGHT_XS": "16px",
-    "LINE_HEIGHT_S": "22px",
-    "LINE_HEIGHT_M": "30px",
-    "LINE_HEIGHT_L": "34px",
-    "LINE_HEIGHT_XL": "40px",
-    "LINE_HEIGHT_XXL": "50px",
-    "LINE_HEIGHT_XXXL": "60px"
+    "XSMALL": "14px",
+    "SMALL": "16px",
+    "DEFAULT": "22px",
+    "MEDIUM": "30px",
+    "LARGE": "34px",
+    "XLARGE": "40px",
+    "XXLARGE": "50px",
+    "XXXLARGE": "60px"
   }
 }

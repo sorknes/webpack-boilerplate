@@ -25,9 +25,9 @@
 // -------------------------------------------------------------------------------
 @import './02-tools/all-tools';
 
-// 03. Contains global styles, such as normalize, fonts, colors, etc
+// 03. Contains global styles, such as normalize, color, typography, spacing, iconography
 // -------------------------------------------------------------------------------
-@import './03-base/all-base';
+@import './03-foundations/all-foundations';
 
 // 04. Contains each self-contained component in its own .scss partial
 // -------------------------------------------------------------------------------

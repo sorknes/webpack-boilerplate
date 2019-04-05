@@ -1,6 +1,8 @@
 // -------------------------------------------------------------------------------
 //
-// Description: Helper class to set spacing
+// Description: CSS classes/mixins for responsive margins and padding.
+//
+// Resource: https://github.com/digitaledgeit/sass-spacing
 // ===============================================================================
 //
 
@@ -83,3 +85,42 @@
     }
   }
 }
+
+// Example usage
+// -------------------------------------------------------------------------------
+// @media screen and (min-width: 36em) {
+//   .mt\:0\@xs {
+//      margin-top: 0;
+//   }
+// }
+//
+// @media screen and (min-width: 36em) {
+//   .mt\:4\@xs {
+//      margin-top: 1rem;
+//   }
+// }
+
+// Example usage, HTML
+// -------------------------------------------------------------------------------
+// <div class="class-name p:1@xs p:2@md">
+//   <h1 class="class-name__title">My Title</h1>
+//   <p class="class-name__content mt:1@xs mt:2@md">My content...</p>
+// </div>
+
+// Example usage, SASS
+// -------------------------------------------------------------------------------
+// .class-name {
+//   @include p(1);
+//
+//   @include breakpoint('md') {
+//     @include p(2);
+//   }
+// }
+
+// .class-name__content {
+//   @include mt(1);
+//
+//     @include breakpoint('md') {
+//       @include mt(2);
+//     }
+// }

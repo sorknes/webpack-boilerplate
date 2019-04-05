@@ -2,6 +2,9 @@
 
 CSS classes/mixins for responsive margins and padding.
 
+> Resource
+> [https://github.com/digitaledgeit/sass-spacing](https://github.com/digitaledgeit/sass-spacing)
+
 ```html
 <div class="class-name p:1@xs p:2@md">
   <h1 class="class-name__title">My Title</h1>

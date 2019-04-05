@@ -1,6 +1,7 @@
 # Spacing
 
-CSS classes/mixins for responsive margins and padding.
+SASS mixins for margins and paddings. Plus a compiled set of responsive margin
+and padding classes.
 
 > Resource:
 > [https://github.com/digitaledgeit/sass-spacing](https://github.com/digitaledgeit/sass-spacing)

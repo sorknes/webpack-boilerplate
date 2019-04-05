@@ -2,7 +2,7 @@
 
 CSS classes/mixins for responsive margins and padding.
 
-> Resource: <br>
+> Resource:
 > [https://github.com/digitaledgeit/sass-spacing](https://github.com/digitaledgeit/sass-spacing)
 
 ```html

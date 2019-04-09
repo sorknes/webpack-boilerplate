@@ -52,7 +52,7 @@
 body {
   background-color: red;
 
-  @include font-family(map-get($FONT_FAMILY, PRIMARY));
+  // @include font-family(map-get($FONT_FAMILY, PRIMARY));
   @include line-height(map-get($LINE_HEIGHT, DEFAULT));
 
   @include mq($from: xs) {
@@ -68,7 +68,7 @@ body {
   }
 
   @include mq($from: lg) {
-    background-color: teal;
+    background-color: white;
   }
 }
 
@@ -143,7 +143,7 @@ h6 {
 .wb-svg-mixin {
   background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_90);
 
-  @include icon-scale(ICON_SCALE_XXXL);
+  @include icon-scale(ICON_SCALE_XXXL); //TODO: map-get
 }
 
 .wb-link {
@@ -155,7 +155,7 @@ h6 {
   background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_80);
   background-image: url('../../images/icons/icon-people.svg');
 
-  @include icon-scale-bg(ICON_SCALE_XXXL);
+  @include icon-scale-bg(ICON_SCALE_XXXL); //TODO: map-get
 }
 
 .wb-image-test {
@@ -181,12 +181,12 @@ h6 {
   background-color: white;
 
   @include text-align(ALIGN_CENTER);
-  @include type-scale(FONT_SIZE_M);
+  @include type-scale(FONT_SIZE_M); //TODO: map-get
   @include border-radius(map-get($BORDER_RADIUS, DEFAULT));
   // @include border(
   //   $border-width-small,
   //   $border-solid,
   //   teal,
   //   all
-  // ); // TODO: Setup map-fetch
+  // ); // TODO: map-get
 }

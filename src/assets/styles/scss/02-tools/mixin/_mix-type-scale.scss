@@ -11,5 +11,5 @@
 @mixin type-scale($scale, $map: $type-scale) {
   $font-size: map-fetch($map, $scale font-size);
 
-  font-size: rem($font-size);
+  font-size: $font-size;
 }

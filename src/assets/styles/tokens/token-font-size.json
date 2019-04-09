@@ -1,13 +1,13 @@
 {
   "FONT_SIZE": {
-    "FONT_SIZE_XXS": "6.76px",
-    "FONT_SIZE_XS": "9px",
-    "FONT_SIZE_S": "12px",
-    "FONT_SIZE_M": "16px",
-    "FONT_SIZE_L": "21.33px",
-    "FONT_SIZE_XL": "28.43px",
-    "FONT_SIZE_XXL": "37.90px",
-    "FONT_SIZE_XXXL": "50.52px",
-    "FONT_SIZE_XXXXL": "67.34px"
+    "FONT_SIZE_XXS": "0.422rem",
+    "FONT_SIZE_XS": "0.563rem",
+    "FONT_SIZE_S": "0.75rem",
+    "FONT_SIZE_M": "1rem",
+    "FONT_SIZE_L": "1.333rem",
+    "FONT_SIZE_XL": "1.777rem",
+    "FONT_SIZE_XXL": "2.369rem",
+    "FONT_SIZE_XXXL": "3.157rem",
+    "FONT_SIZE_XXXXL": "4.209rem"
   }
 }

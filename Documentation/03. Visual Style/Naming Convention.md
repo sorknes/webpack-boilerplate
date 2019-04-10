@@ -9,7 +9,45 @@ Then I came across
 [this](http://danmall.me/articles/typography-in-design-systems/) article written
 by Dan Mall. And I was thinking of trying a new way of thinking. Using a
 numerical value from 1 - 7 with a descripting prefix, where 1 is the smallest
-and 7 are the larges value.
+and 7 are the largest value.
+
+## Animation
+
+**Duration**
+
+- duration-1
+- duration-2
+- duration-3
+- duration-4
+- duration-5
+- duration-6
+- duration-7
+
+## Media queries
+
+**Breakpoints**
+
+- breakpoint-1
+- breakpoint-2
+- breakpoint-3
+- breakpoint-4
+
+## Border
+
+**Border radius**
+
+- border-radius-1
+- border-radius-2
+- border-radius-3
+- border-radius-4
+
+**Border width**
+
+- border-width-1
+- border-width-2
+- border-width-3
+- border-width-4
+- border-width-5
 
 ## Typography
 
@@ -45,15 +83,3 @@ and 7 are the larges value.
 - line-height-5
 - line-height-6
 - line-height-7
-
-## Animation
-
-**Duration**
-
-- duration-1
-- duration-2
-- duration-3
-- duration-4
-- duration-5
-- duration-6
-- duration-7

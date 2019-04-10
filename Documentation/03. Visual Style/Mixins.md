@@ -2,6 +2,8 @@
 
 Here's a list of all available mixins.
 
+> TODO: describe the tokens / config / mixins flow
+
 ## SASS-MQ (Media Query)
 
 [mq()](https://github.com/sass-mq/sass-mq) is a Sass mixin that helps you

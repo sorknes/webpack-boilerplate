@@ -23,15 +23,6 @@ and 7 are the largest value.
 - duration-6
 - duration-7
 
-## Media queries
-
-**Breakpoints**
-
-- breakpoint-1
-- breakpoint-2
-- breakpoint-3
-- breakpoint-4
-
 ## Border
 
 **Border radius**
@@ -48,6 +39,23 @@ and 7 are the largest value.
 - border-width-3
 - border-width-4
 - border-width-5
+
+## Icon
+
+- icon-scale-1
+- icon-scale-2
+- icon-scale-3
+- icon-scale-4
+- icon-scale-5
+- icon-scale-6
+- icon-scale-7
+
+## Breakpoint
+
+- breakpoint-1
+- breakpoint-2
+- breakpoint-3
+- breakpoint-4
 
 ## Typography
 

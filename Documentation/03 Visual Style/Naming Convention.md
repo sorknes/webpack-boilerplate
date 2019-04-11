@@ -15,13 +15,13 @@ and 7 are the largest value.
 
 **Duration**
 
-- duration-1
-- duration-2
-- duration-3
-- duration-4
-- duration-5
-- duration-6
-- duration-7
+- duration-1 (0ms)
+- duration-2 (100ms)
+- duration-3 (200ms)
+- duration-4 (300ms - default)
+- duration-5 (500ms)
+- duration-6 (700ms)
+- duration-7 (1000ms)
 
 ## Border
 
@@ -52,10 +52,10 @@ and 7 are the largest value.
 
 ## Breakpoint
 
-- breakpoint-1
-- breakpoint-2
-- breakpoint-3
-- breakpoint-4
+- breakpoint-1 (576px)
+- breakpoint-2 (768px)
+- breakpoint-3 (992px)
+- breakpoint-4 (1200px)
 
 ## Typography
 
@@ -76,11 +76,13 @@ and 7 are the largest value.
 
 **Font weight**
 
-- font-weight-1
-- font-weight-2
-- font-weight-3
-- font-weight-4
-- font-weight-5
+- font-weight-1 (200)
+- font-weight-2 (300)
+- font-weight-3 (400)
+- font-weight-4 (600)
+- font-weight-5 (700)
+- font-weight-6 (800)
+- font-weight-7 (900)
 
 **Line height**
 

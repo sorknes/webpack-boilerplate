@@ -1,8 +1,12 @@
 // -------------------------------------------------------------------------------
 //
-// Description: Contains predefined mixins, such as placeholder, border,
-// border-radius etc
+// Description: Form input
 // ===============================================================================
 //
 
-@import './focus';
+input {
+  @include input-placeholder {
+    color: map-get($COLOR_GREY, COLOR_GREY_TINT_25);
+    opacity: 1 !important;
+  }
+}

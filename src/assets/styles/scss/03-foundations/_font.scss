@@ -5,10 +5,10 @@
 //
 
 html {
-  // @include font-family(map-get($FONT_FAMILY, PRIMARY));
+  @include font-family(FONT_FAMILY_1);
   @include type-scale(TEXT_PRESET_2);
 
-  // @include font-weight(FONT_WEIGHT_REGULAR); //TODO: map-get
+  @include font-weight(FONT_WEIGHT_3);
   @include establish-baseline();
 
   * {

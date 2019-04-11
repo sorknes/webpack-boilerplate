@@ -1,9 +1,11 @@
 {
   "FONT_WEIGHT": {
-    "FONT_WEIGHT_LIGHT": "300",
-    "FONT_WEIGHT_REGULAR": "400",
-    "FONT_WEIGHT_SEMI_BOLD": "600",
-    "FONT_WEIGHT_BOLD": "700",
-    "FONT_WEIGHT_EXTRA_BOLD": "800"
+    "FONT_WEIGHT_1": "200",
+    "FONT_WEIGHT_2": "300",
+    "FONT_WEIGHT_3": "400",
+    "FONT_WEIGHT_4": "600",
+    "FONT_WEIGHT_5": "700",
+    "FONT_WEIGHT_6": "800",
+    "FONT_WEIGHT_7": "900"
   }
 }

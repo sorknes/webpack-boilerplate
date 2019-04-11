@@ -1,9 +1,12 @@
 // -------------------------------------------------------------------------------
 //
-// Description: Style input placeholder txt
+// Description: Form textarea
 // ===============================================================================
 //
 
-@include placeholder {
-  color: map-get($COLOR_GREY, COLOR_GREY_TINT_25);
+textarea {
+  @include input-placeholder {
+    color: map-get($COLOR_GREY, COLOR_GREY_TINT_25);
+    opacity: 1 !important;
+  }
 }

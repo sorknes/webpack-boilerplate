@@ -6,59 +6,62 @@
 
 // Heading
 // -------------------------------------------------------------------------------
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   font-weight: map-get($FONT_WEIGHT, FONT_WEIGHT_SEMI_BOLD);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include my(0);
+  @include font-weight(FONT_WEIGHT_5);
+  @include font-family(FONT_FAMILY_2);
+}
 
-//   @include my(0);
-// }
+h1,
+.h1 {
+  @include type-scale(TEXT_PRESET_7);
+}
 
-// h1,
-// .h1 {
-//   @include type-scale(FONT_SIZE_XXXXL);
-// }
+h2,
+.h2 {
+  @include type-scale(TEXT_PRESET_6);
+}
 
-// h2,
-// .h2 {
-//   @include type-scale(FONT_SIZE_XXXL);
-//   @include line-height(map-get($LINE_HEIGHT, XXLARGE)); //TODO: match font-size
-// }
+h3,
+.h3 {
+  @include type-scale(TEXT_PRESET_5);
+}
 
-// h3,
-// .h3 {
-//   @include type-scale(FONT_SIZE_XXL);
-//   @include line-height(map-get($LINE_HEIGHT, XLARGE));
-// }
+h4,
+.h4 {
+  @include type-scale(TEXT_PRESET_4);
+}
 
-// h4,
-// .h4 {
-//   @include type-scale(FONT_SIZE_XL);
-//   @include line-height(map-get($LINE_HEIGHT, LARGE));
-// }
+h5,
+.h5 {
+  @include type-scale(TEXT_PRESET_3);
+}
 
-// h5,
-// .h5 {
-//   @include type-scale(FONT_SIZE_L);
-//   @include line-height(map-get($LINE_HEIGHT, MEDIUM));
-// }
+h6,
+.h6 {
+  text-transform: uppercase;
 
-// h6,
-// .h6 {
-//   text-transform: uppercase;
-
-//   @include type-scale(FONT_SIZE_M);
-//   @include line-height(map-get($LINE_HEIGHT, MEDIUM));
-// }
+  @include type-scale(TEXT_PRESET_2);
+}
 
 // // Paragraph
 // // -------------------------------------------------------------------------------
+p,
+.paragraph {
+  @include mb(6);
+}
 
 // // Small
 // // -------------------------------------------------------------------------------
+small,
+.small {
+  @include type-scale(TEXT_PRESET_1);
+}
 
 // // List
 // // -------------------------------------------------------------------------------

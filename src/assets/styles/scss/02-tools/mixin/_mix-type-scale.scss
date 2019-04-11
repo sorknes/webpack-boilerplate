@@ -4,7 +4,7 @@
 // It then uses the function map-fetch to reach deep key:value pairs within this map.
 //
 // Finally it outputs the correct pairing of font-size and line-height, using the
-// compass-mixin `buf-type-scale`.
+// compass-mixin `type-scale`.
 // ===============================================================================
 //
 
@@ -13,5 +13,5 @@
   $line-height: map-fetch($map, $scale line-height);
 
   font-size: rem($font-size);
-  line-height: rem($line-height);
+  line-height: $line-height;
 }

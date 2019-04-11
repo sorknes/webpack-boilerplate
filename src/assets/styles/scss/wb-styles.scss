@@ -49,37 +49,25 @@
 // -------------------------------------------------------------------------------
 @import './wb-shame';
 
-// body {
-//   background-color: red;
+body {
+  background-color: red;
 
-//   // @include font-family(map-get($FONT_FAMILY, PRIMARY));
-//   @include line-height(map-get($LINE_HEIGHT, DEFAULT));
+  @include mq($from: xs) {
+    background-color: blue;
+  }
 
-//   @include mq($from: xs) {
-//     background-color: blue;
-//   }
+  @include mq($from: sm) {
+    background-color: green;
+  }
 
-//   @include mq($from: sm) {
-//     background-color: green;
-//   }
+  @include mq($from: md) {
+    background-color: yellow;
+  }
 
-//   @include mq($from: md) {
-//     background-color: yellow;
-//   }
-
-//   @include mq($from: lg) {
-//     background-color: white;
-//   }
-// }
-
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   @include font-family(FONT_FAMILY_SECONDARY);
-// }
+  @include mq($from: lg) {
+    background-color: white;
+  }
+}
 
 // .wb-breakpoint-test {
 //   position: relative;
@@ -140,23 +128,28 @@
 //   background-size: cover;
 // }
 
-// .wb-svg-mixin {
-//   background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_90);
+.wb-svg-mixin {
+  background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_90);
 
-//   @include icon-scale(ICON_SCALE_XXXL); //TODO: map-get
-// }
+  @include icon-scale(ICON_SCALE_7);
+
+  svg {
+    fill: red;
+  }
+}
 
 // .wb-link {
 //   @include text-underline(red, yellow, blue);
 //   @include transition(all, map-get($DURATION, DEFAULT), ease-in-out);
 // }
 
-// .wb-svg-mixin-bg {
-//   background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_80);
-//   background-image: url('../../images/icons/icon-people.svg');
-
-//   @include icon-scale-bg(ICON_SCALE_XXXL); //TODO: map-get
-// }
+.wb-svg-mixin-bg {
+  width: 56px;
+  height: 56px;
+  background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_80);
+  background-image: url('../../images/icons/icon-people.svg');
+  background-size: cover;
+}
 
 // .wb-image-test {
 //   width: rem(400px);

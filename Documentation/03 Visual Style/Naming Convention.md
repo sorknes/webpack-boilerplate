@@ -66,13 +66,13 @@ and 7 are the largest value.
 
 **Font size**
 
-- font-size-1
-- font-size-2
-- font-size-3
-- font-size-4
-- font-size-5
-- font-size-6
-- font-size-7
+- font-size-1 (small)
+- font-size-2 (default)
+- font-size-3 (h5)
+- font-size-4 (h4)
+- font-size-5 (h3)
+- font-size-6 (h2)
+- font-size-7 (h1)
 
 **Font weight**
 
@@ -84,10 +84,10 @@ and 7 are the largest value.
 
 **Line height**
 
-- line-height-1
-- line-height-2
-- line-height-3
-- line-height-4
-- line-height-5
-- line-height-6
-- line-height-7
+- line-height-1 (small)
+- line-height-2 (default)
+- line-height-3 (h5)
+- line-height-4 (h4)
+- line-height-5 (h3)
+- line-height-6 (h2)
+- line-height-7 (h1)

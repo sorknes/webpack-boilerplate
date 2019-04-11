@@ -6,31 +6,12 @@
 //
 
 $type-scale: (
-  FONT_SIZE_XXS: (
-    font-size: map-get($FONT_SIZE, FONT_SIZE_XXS),
+  TEXT_PRESET_1: (
+    font-size: map-get($FONT_SIZE, FONT_SIZE_1),
+    line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_1),
   ),
-  FONT_SIZE_XS: (
-    font-size: map-get($FONT_SIZE, FONT_SIZE_XS),
-  ),
-  FONT_SIZE_S: (
-    font-size: map-get($FONT_SIZE, FONT_SIZE_S),
-  ),
-  FONT_SIZE_M: (
-    font-size: map-get($FONT_SIZE, FONT_SIZE_M),
-  ),
-  FONT_SIZE_L: (
-    font-size: map-get($FONT_SIZE, FONT_SIZE_L),
-  ),
-  FONT_SIZE_XL: (
-    font-size: map-get($FONT_SIZE, FONT_SIZE_XL),
-  ),
-  FONT_SIZE_XXL: (
-    font-size: map-get($FONT_SIZE, FONT_SIZE_XXL),
-  ),
-  FONT_SIZE_XXXL: (
-    font-size: map-get($FONT_SIZE, FONT_SIZE_XXXL),
-  ),
-  FONT_SIZE_XXXXL: (
-    font-size: map-get($FONT_SIZE, FONT_SIZE_XXXXL),
+  TEXT_PRESET_2: (
+    font-size: map-get($FONT_SIZE, FONT_SIZE_2),
+    line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_2),
   ),
 );

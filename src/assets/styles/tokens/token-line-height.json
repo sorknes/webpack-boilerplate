@@ -1,12 +1,11 @@
 {
   "LINE_HEIGHT": {
-    "XSMALL": "14px",
-    "SMALL": "16px",
-    "DEFAULT": "22px",
-    "MEDIUM": "30px",
-    "LARGE": "34px",
-    "XLARGE": "40px",
-    "XXLARGE": "50px",
-    "XXXLARGE": "60px"
+    "LINE_HEIGHT_1": "16px",
+    "LINE_HEIGHT_2": "22px",
+    "LINE_HEIGHT_3": "30px",
+    "LINE_HEIGHT_4": "34px",
+    "LINE_HEIGHT_5": "40px",
+    "LINE_HEIGHT_6": "50px",
+    "LINE_HEIGHT_7": "60px"
   }
 }

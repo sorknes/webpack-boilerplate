@@ -6,63 +6,62 @@
 
 // Heading
 // -------------------------------------------------------------------------------
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: map-get($FONT_WEIGHT, FONT_WEIGHT_SEMI_BOLD);
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-weight: map-get($FONT_WEIGHT, FONT_WEIGHT_SEMI_BOLD);
 
-  @include my(0);
-}
+//   @include my(0);
+// }
 
-h1,
-.h1 {
-  @include type-scale(FONT_SIZE_XXXXL);
-  @include line-height(map-get($LINE_HEIGHT, XXXLARGE));
-}
+// h1,
+// .h1 {
+//   @include type-scale(FONT_SIZE_XXXXL);
+// }
 
-h2,
-.h2 {
-  @include type-scale(FONT_SIZE_XXXL);
-  @include line-height(map-get($LINE_HEIGHT, XXLARGE)); //TODO: match font-size
-}
+// h2,
+// .h2 {
+//   @include type-scale(FONT_SIZE_XXXL);
+//   @include line-height(map-get($LINE_HEIGHT, XXLARGE)); //TODO: match font-size
+// }
 
-h3,
-.h3 {
-  @include type-scale(FONT_SIZE_XXL);
-  @include line-height(map-get($LINE_HEIGHT, XLARGE));
-}
+// h3,
+// .h3 {
+//   @include type-scale(FONT_SIZE_XXL);
+//   @include line-height(map-get($LINE_HEIGHT, XLARGE));
+// }
 
-h4,
-.h4 {
-  @include type-scale(FONT_SIZE_XL);
-  @include line-height(map-get($LINE_HEIGHT, LARGE));
-}
+// h4,
+// .h4 {
+//   @include type-scale(FONT_SIZE_XL);
+//   @include line-height(map-get($LINE_HEIGHT, LARGE));
+// }
 
-h5,
-.h5 {
-  @include type-scale(FONT_SIZE_L);
-  @include line-height(map-get($LINE_HEIGHT, MEDIUM));
-}
+// h5,
+// .h5 {
+//   @include type-scale(FONT_SIZE_L);
+//   @include line-height(map-get($LINE_HEIGHT, MEDIUM));
+// }
 
-h6,
-.h6 {
-  text-transform: uppercase;
+// h6,
+// .h6 {
+//   text-transform: uppercase;
 
-  @include type-scale(FONT_SIZE_M);
-  @include line-height(map-get($LINE_HEIGHT, MEDIUM));
-}
+//   @include type-scale(FONT_SIZE_M);
+//   @include line-height(map-get($LINE_HEIGHT, MEDIUM));
+// }
 
-// Paragraph
-// -------------------------------------------------------------------------------
+// // Paragraph
+// // -------------------------------------------------------------------------------
 
-// Small
-// -------------------------------------------------------------------------------
+// // Small
+// // -------------------------------------------------------------------------------
 
-// List
-// -------------------------------------------------------------------------------
+// // List
+// // -------------------------------------------------------------------------------
 
-// Blockquotes
-// -------------------------------------------------------------------------------
+// // Blockquotes
+// // -------------------------------------------------------------------------------

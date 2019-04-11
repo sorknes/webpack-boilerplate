@@ -10,6 +10,8 @@
 
 @mixin type-scale($scale, $map: $type-scale) {
   $font-size: map-fetch($map, $scale font-size);
+  $line-height: map-fetch($map, $scale line-height);
 
-  font-size: $font-size;
+  font-size: rem($font-size);
+  line-height: rem($line-height);
 }

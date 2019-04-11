@@ -5,9 +5,10 @@
 //
 
 html {
-  @include font-family(map-get($FONT_FAMILY, PRIMARY));
-  @include line-height(map-get($LINE_HEIGHT, DEFAULT));
-  @include font-weight(FONT_WEIGHT_REGULAR); //TODO: map-get
+  // @include font-family(map-get($FONT_FAMILY, PRIMARY));
+  @include type-scale(TEXT_PRESET_2);
+
+  // @include font-weight(FONT_WEIGHT_REGULAR); //TODO: map-get
   @include establish-baseline();
 
   * {

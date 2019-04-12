@@ -40,11 +40,13 @@ and 7 are the largest value.
 **Border width**
 
 - border-width-none (0)
-- border-width-1
-- border-width-2
-- border-width-3
-- border-width-4
-- border-width-5
+- border-width-1 (1px)
+- border-width-2 (2px)
+- border-width-3 (4px)
+- border-width-4 (8px)
+- border-width-5 (16px)
+- border-width-6 (32px)
+- border-width-7 (64px)
 
 ## Icon
 

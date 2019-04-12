@@ -19,10 +19,10 @@ $mq-responsive: true;
 // stakeholders, designers, developers, and testers.
 
 $mq-breakpoints: (
-  xs: map-get($BREAKPOINT, BREAKPOINT_XS),
-  sm: map-get($BREAKPOINT, BREAKPOINT_SM),
-  md: map-get($BREAKPOINT, BREAKPOINT_MD),
-  lg: map-get($BREAKPOINT, BREAKPOINT_LG),
+  xs: map-get($BREAKPOINT, BREAKPOINT_1),
+  sm: map-get($BREAKPOINT, BREAKPOINT_2),
+  md: map-get($BREAKPOINT, BREAKPOINT_3),
+  lg: map-get($BREAKPOINT, BREAKPOINT_4),
 );
 
 // Used for computer screens, tablets, smart-phones etc.

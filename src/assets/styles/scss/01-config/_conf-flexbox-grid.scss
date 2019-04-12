@@ -9,19 +9,19 @@ $grid-columns: 12 !default; // Set number of columns in the grid
 
 $xs-max: map-get(
   $BREAKPOINT,
-  BREAKPOINT_XS
+  BREAKPOINT_1
 ) !default; // Set xs breakpoint's max width
 $sm-max: map-get(
   $BREAKPOINT,
-  BREAKPOINT_SM
+  BREAKPOINT_2
 ) !default; // Set sm breakpoint's max width
 $md-max: map-get(
   $BREAKPOINT,
-  BREAKPOINT_MD
+  BREAKPOINT_3
 ) !default; // Set md breakpoint's max width
 $lg-max: map-get(
   $BREAKPOINT,
-  BREAKPOINT_LG
+  BREAKPOINT_4
 ) !default; // Set lg breakpoint's max width
 
 $gutter: 1rem !default; // Set gutter size

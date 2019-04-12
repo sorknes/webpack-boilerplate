@@ -1,5 +1,6 @@
 {
   "ICON_SCALE": {
+    "ICON_SCALE_NONE": "0",
     "ICON_SCALE_1": "8px",
     "ICON_SCALE_2": "16px",
     "ICON_SCALE_3": "24px",

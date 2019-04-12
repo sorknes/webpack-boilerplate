@@ -121,12 +121,12 @@ body {
 //   }
 // }
 
-// .wb-svg-test {
-//   width: rem(200px);
-//   height: rem(200px);
-//   background-image: url('../../images/icons/icon-people.svg');
-//   background-size: cover;
-// }
+.wb-svg-test {
+  width: rem(200px);
+  height: rem(200px);
+  background-image: url('../../images/icons/icon-people.svg');
+  background-size: cover;
+}
 
 .wb-svg-mixin {
   background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_90);
@@ -143,30 +143,12 @@ body {
 //   @include transition(all, map-get($DURATION, DEFAULT), ease-in-out);
 // }
 
-.wb-svg-mixin-bg {
-  width: 56px;
-  height: 56px;
-  background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_80);
-  background-image: url('../../images/icons/icon-people.svg');
+.wb-image-test {
+  width: rem(400px);
+  height: rem(400px);
+  background-image: url('../../images/image.png');
   background-size: cover;
 }
-
-// .wb-image-test {
-//   width: rem(400px);
-//   height: rem(400px);
-//   background-image: url('../../images/image.png');
-//   background-size: cover;
-
-//   @include pt(1);
-//   @include pr(2);
-//   @include pb(3);
-//   @include pl(4);
-
-//   @include mt(1);
-//   @include mr(2);
-//   @include mb(3);
-//   @include ml(4);
-// }
 
 // .wb-test-border-radius {
 //   width: 800px;

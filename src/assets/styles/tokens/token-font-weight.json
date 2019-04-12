@@ -1,5 +1,6 @@
 {
   "FONT_WEIGHT": {
+    "FONT_WEIGHT_NONE": "0",
     "FONT_WEIGHT_1": "200",
     "FONT_WEIGHT_2": "300",
     "FONT_WEIGHT_3": "400",

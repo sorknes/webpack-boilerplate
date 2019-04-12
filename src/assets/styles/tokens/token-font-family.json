@@ -1,5 +1,6 @@
 {
   "FONT_FAMILY": {
+    "FONT_FAMILY_NONE": [],
     "FONT_FAMILY_1": ["'Open Sans'", "sans-serif"],
     "FONT_FAMILY_2": ["'Playfair Display'", "serif"]
   }

@@ -63,8 +63,8 @@ and 7 are the largest value.
 
 **Font family**
 
-- font-family-1
-- font-family-2
+- font-family-1 (Open Sans, sans-serif)
+- font-family-2 (Playfair Display, serif)
 
 **Font size**
 

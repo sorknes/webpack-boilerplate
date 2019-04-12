@@ -294,7 +294,7 @@ separate them if you want to do so.
   @include text-underline();
 }
 
-// active-color, hover(focus)-color visited-color
+// active-color, hover(focus)-color, visited-color
 // -------------------------------------------------------------------------------
 .class-name {
   @include text-underline(red, yellow, blue);

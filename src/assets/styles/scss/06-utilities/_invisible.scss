@@ -1,9 +1,9 @@
 // -------------------------------------------------------------------------------
 //
-// Description: Contains predefined mixins, such as placeholder, border,
-// border-radius etc
+// Description: Invisible
 // ===============================================================================
 //
 
-@import './focus';
-@import './hidden';
+.invisible {
+  @include invisible();
+}

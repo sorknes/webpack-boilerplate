@@ -15,13 +15,14 @@ and 7 are the largest value.
 
 **Duration**
 
-- duration-1 (0ms)
-- duration-2 (100ms)
-- duration-3 (200ms)
-- duration-4 (300ms - default)
-- duration-5 (500ms)
-- duration-6 (700ms)
-- duration-7 (1000ms)
+- duration-none (0ms)
+- duration-1 (100ms)
+- duration-2 (200ms)
+- duration-3 (300ms - default)
+- duration-4 (500ms)
+- duration-5 (700ms)
+- duration-6 (1000ms)
+- duration-7 (2000ms)
 
 ## Border
 
@@ -42,13 +43,14 @@ and 7 are the largest value.
 
 ## Icon
 
-- icon-scale-1
-- icon-scale-2
-- icon-scale-3
-- icon-scale-4
-- icon-scale-5
-- icon-scale-6
-- icon-scale-7
+- icon-scale-none (0)
+- icon-scale-1 (8px)
+- icon-scale-2 (16px)
+- icon-scale-3 (24px)
+- icon-scale-4 (32px)
+- icon-scale-5 (40px)
+- icon-scale-6 (48px)
+- icon-scale-7 (56px)
 
 ## Breakpoint
 
@@ -66,6 +68,7 @@ and 7 are the largest value.
 
 **Font size**
 
+- font-size-none (0)
 - font-size-1 (small)
 - font-size-2 (default)
 - font-size-3 (h5)
@@ -76,6 +79,7 @@ and 7 are the largest value.
 
 **Font weight**
 
+- font-weight-none (0)
 - font-weight-1 (200)
 - font-weight-2 (300)
 - font-weight-3 (400)
@@ -86,6 +90,7 @@ and 7 are the largest value.
 
 **Line height**
 
+- line-height-none (0)
 - line-height-1 (small)
 - line-height-2 (default)
 - line-height-3 (h5)

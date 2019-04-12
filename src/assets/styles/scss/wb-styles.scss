@@ -138,10 +138,10 @@ body {
   }
 }
 
-// .wb-link {
-//   @include text-underline(red, yellow, blue);
-//   @include transition(all, map-get($DURATION, DEFAULT), ease-in-out);
-// }
+.wb-link {
+  @include text-underline(red, yellow, blue);
+  @include transition(all, DURATION_3, ease-in-out);
+}
 
 .wb-image-test {
   width: rem(400px);
@@ -156,7 +156,6 @@ body {
 //   background-color: white;
 
 //   @include text-align(ALIGN_CENTER);
-//   @include type-scale(FONT_SIZE_M); //TODO: map-get
 //   @include border-radius(map-get($BORDER_RADIUS, DEFAULT));
 //   // @include border(
 //   //   $border-width-small,

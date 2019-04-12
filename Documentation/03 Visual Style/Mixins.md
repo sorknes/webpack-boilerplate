@@ -311,19 +311,6 @@ Transition with type and duration.
 }
 ```
 
-## Truncate
-
-Adding truncation (shorten (something) by cutting off the top or the end) to an
-element isn't as simple as it should be, although it is with this handy time
-saver meaning when you include the mixin, you only have to specify your boundry
-with a max width value, happy days!
-
-```scss
-.class-name {
-  @include truncate(map-get($mq-breakpoints, md));
-}
-```
-
 ## Type scale
 
 This mixin takes a parameter for typographic scale (sass-map: \$type-scale). It

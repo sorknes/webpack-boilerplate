@@ -150,17 +150,12 @@ body {
   background-size: cover;
 }
 
-// .wb-test-border-radius {
-//   width: 800px;
-//   height: 400px;
-//   background-color: white;
+.wb-test-border-radius {
+  width: 800px;
+  height: 400px;
+  background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_90);
 
-//   @include text-align(ALIGN_CENTER);
-//   @include border-radius(map-get($BORDER_RADIUS, DEFAULT));
-//   // @include border(
-//   //   $border-width-small,
-//   //   $border-solid,
-//   //   teal,
-//   //   all
-//   // ); // TODO: map-get
-// }
+  @include text-align(ALIGN_CENTER);
+  @include border-radius(BORDER_RADIUS_7);
+  @include border(BORDER_WIDTH_2, solid, teal, all);
+}

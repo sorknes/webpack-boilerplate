@@ -28,13 +28,18 @@ and 7 are the largest value.
 
 **Border radius**
 
-- border-radius-1
-- border-radius-2
-- border-radius-3
-- border-radius-4
+- border-radius-none (0)
+- border-radius-1 (2px)
+- border-radius-2 (4px)
+- border-radius-3 (8px)
+- border-radius-4 (16px)
+- border-radius-5 (32px)
+- border-radius-6 (9999px)
+- border-radius-7 (100%)
 
 **Border width**
 
+- border-width-none (0)
 - border-width-1
 - border-width-2
 - border-width-3

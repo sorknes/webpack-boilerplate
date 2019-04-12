@@ -5,13 +5,24 @@
 //
 
 @mixin border-radius(
-  $top-left: $radius-small,
+  $top-left: null,
   $top-right: null,
   $bottom-right: null,
   $bottom-left: null
 ) {
-  -webkit-border-radius: $top-left $top-right $bottom-right $bottom-left;
-  -moz-border-radius: $top-left $top-right $bottom-right $bottom-left;
-  -ms-border-radius: $top-left $top-right $bottom-right $bottom-left;
-  border-radius: $top-left $top-right $bottom-right $bottom-left;
+  -webkit-border-radius: map-get($BORDER_RADIUS, $top-left)
+    map-get($BORDER_RADIUS, $top-right) map-get($BORDER_RADIUS, $bottom-left)
+    map-get($BORDER_RADIUS, $bottom-right);
+
+  -moz-border-radius: map-get($BORDER_RADIUS, $top-left)
+    map-get($BORDER_RADIUS, $top-right) map-get($BORDER_RADIUS, $bottom-left)
+    map-get($BORDER_RADIUS, $bottom-right);
+
+  -ms-border-radius: map-get($BORDER_RADIUS, $top-left)
+    map-get($BORDER_RADIUS, $top-right) map-get($BORDER_RADIUS, $bottom-left)
+    map-get($BORDER_RADIUS, $bottom-right);
+
+  border-radius: map-get($BORDER_RADIUS, $top-left)
+    map-get($BORDER_RADIUS, $top-right) map-get($BORDER_RADIUS, $bottom-left)
+    map-get($BORDER_RADIUS, $bottom-right);
 }

@@ -76,6 +76,8 @@ module.exports = merge(common, {
     new CleanWebpackPlugin(['./dist']),
     new CopyWebpackPlugin([
       { from: './src/assets/images', to: './assets/images', ignore: ['*.svg'] },
+      { from: './src/humans.txt', to: './' },
+      { from: './src/robots.txt', to: './' },
     ]),
     new MiniCssExtractPlugin({
       filename: './assets/styles/[name].css',

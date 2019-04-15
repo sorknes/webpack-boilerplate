@@ -267,6 +267,24 @@ SCSS classes/mixins for responsive margins and padding.
 }
 ```
 
+## Screen readers only
+
+Theorically bulletproof CSS class for visually hide anything and keep it
+accessible to ATs.
+
+```scss
+.class-name {
+  @include sr-only;
+}
+
+// Use in conjunction with .sr-only to only display content when it's focused.
+// -------------------------------------------------------------------------------
+.class-name:focus,
+.class-name:active {
+  @include sr-only-focusable;
+}
+```
+
 ## Text align
 
 A mixin that helps text-alignment.

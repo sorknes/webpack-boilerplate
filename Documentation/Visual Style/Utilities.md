@@ -32,6 +32,25 @@ Show elements with display block.
 }
 ```
 
+## Spacing
+
+SCSS classes/mixins for responsive margins and padding.
+[Resource used](https://github.com/digitaledgeit/sass-spacing)
+
+```scss
+// p = padding t = top
+// -------------------------------------------------------------------------------
+.class-name {
+  @include pt(4);
+}
+
+// m = margin t = bottom
+// -------------------------------------------------------------------------------
+.class-name {
+  @include mb(4);
+}
+```
+
 ## Sr-only
 
 Theorically bulletproof CSS class for visually hide anything and keep it

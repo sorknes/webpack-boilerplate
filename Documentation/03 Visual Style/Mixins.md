@@ -67,7 +67,24 @@ Adds border-radius to element.
 // All corners
 // -------------------------------------------------------------------------------
 .class-name {
-  @include border-radius(map-get($BORDER_RADIUS, BORDER_RADIUS_S));
+  @include border-radius(BORDER_RADIUS_1);
+}
+
+// Top-left only
+// -------------------------------------------------------------------------------
+.class-name {
+  @include border-radius(BORDER_RADIUS_1);
+}
+
+// Bottom only
+// -------------------------------------------------------------------------------
+.class-name {
+  @include border-radius(
+    BORDER_RADIUS_NONE,
+    BORDER_RADIUS_NONE,
+    BORDER_RADIUS_1,
+    BORDER_RADIUS_1
+  );
 }
 ```
 
@@ -97,10 +114,14 @@ Gallagher. This version is simplified for more modern browsers.
 Container mixin
 
 ```scss
+// Max-width
+// -------------------------------------------------------------------------------
 .class-name {
   @include container;
 }
 
+// 100% width
+// -------------------------------------------------------------------------------
 .class-name {
   @include container-fluid;
 }
@@ -108,7 +129,10 @@ Container mixin
 
 ## Establish Baseline
 
-Adjust font and line-height values.
+Adjust font-size and line-height values. Default values are:
+
+- Font-size = 16px
+- Line-height = 1.5
 
 ```scss
 .class-name {
@@ -194,7 +218,7 @@ The @content directive, allows us to pass a content block into a mixin.
 
 ```scss
 @include placeholder {
-  color: black;
+  color: map-get($COLOR_GREY, COLOR_GREY_TINT_25);
 }
 ```
 
@@ -266,9 +290,9 @@ that we are “forced” in a friendly way to declare all 4 states of our links.
 The :hover and :focus pseudo-classes are usually declared together. Feel free to
 separate them if you want to do so.
 
-- active-color
-- hover(focus)-color
-- visited-color
+- Active-color
+- Hover(focus)-color
+- Visited-color
 
 ```scss
 .class-name {

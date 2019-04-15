@@ -143,6 +143,7 @@ body {
   @include transition(all, DURATION_3, ease-in-out);
   @include z-index(Z_INDEX_2);
   @include line-height(LINE_HEIGHT_1);
+  @include establish-baseline;
 }
 
 .wb-image-test {
@@ -158,6 +159,11 @@ body {
   background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_90);
 
   @include text-align(ALIGN_CENTER);
-  @include border-radius(BORDER_RADIUS_7);
+  @include border-radius(
+    BORDER_RADIUS_NONE,
+    BORDER_RADIUS_NONE,
+    BORDER_RADIUS_7,
+    BORDER_RADIUS_7
+  );
   @include border(BORDER_WIDTH_2, solid, teal, all);
 }

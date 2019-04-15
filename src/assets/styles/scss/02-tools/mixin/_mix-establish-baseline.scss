@@ -5,7 +5,7 @@
 //
 
 @mixin establish-baseline {
-  font-size: map-get($FONT_SIZE, FONT_SIZE_M);
-  line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_S);
+  font-size: map-get($FONT_SIZE, FONT_SIZE_2);
+  line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_2);
   text-size-adjust: 100%;
 }

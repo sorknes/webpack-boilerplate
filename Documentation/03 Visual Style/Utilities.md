@@ -11,3 +11,13 @@ Add a uniform focus styling.
   @include focus();
 }
 ```
+
+## Hidden
+
+Hide elements
+
+```scss
+.hidden {
+  @include hidden();
+}
+```

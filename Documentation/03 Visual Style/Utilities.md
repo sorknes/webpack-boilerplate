@@ -2,16 +2,6 @@
 
 There are som nifty helper classes available.
 
-## Focus
-
-Add a uniform focus styling.
-
-```scss
-:focus {
-  @include focus();
-}
-```
-
 ## Hidden
 
 Hide elements with display none.
@@ -29,6 +19,16 @@ Make elements invisible (but still take up place).
 ```scss
 .invisible {
   @include invisible();
+}
+```
+
+## Shown
+
+Show elements with display block.
+
+```scss
+.shown {
+  @include shown;
 }
 ```
 

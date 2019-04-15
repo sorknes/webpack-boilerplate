@@ -140,6 +140,16 @@ Adjust font-size and line-height values. Default values are:
 }
 ```
 
+## Focus
+
+Add a uniform focus styling.
+
+```scss
+:focus {
+  @include focus();
+}
+```
+
 ## Font Family
 
 Choose between different sets of font-families.

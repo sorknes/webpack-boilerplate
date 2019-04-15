@@ -1,9 +1,9 @@
 // -------------------------------------------------------------------------------
 //
-// Description: Contains each self-contained component in its own .scss partial
+// Description: An easy way to show an element
 // ===============================================================================
 //
 
-@import './focus';
-@import './input';
-@import './textarea';
+@mixin shown {
+  display: block;
+}

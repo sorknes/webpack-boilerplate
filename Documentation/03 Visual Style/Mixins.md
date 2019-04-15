@@ -43,19 +43,19 @@ Add border to element.
 // Border all sides
 // -------------------------------------------------------------------------------
 .class-name {
-  @include border($border-width-small, $border-solid, teal, all);
+  @include border(BORDER_WIDTH_2, solid, teal, all);
 }
 
 // All sides minus bottom
 // -------------------------------------------------------------------------------
 .class-name {
-  @include border($border-width-small, $border-dashed, teal, all, bottom);
+  @include border(BORDER_WIDTH_2, solid, teal, all, bottom);
 }
 
 // Top only
 // -------------------------------------------------------------------------------
 .class-name {
-  @include border($border-width-small, $border-dotted, teal, top);
+  @include border(BORDER_WIDTH_2, solid, teal, top);
 }
 ```
 
@@ -68,29 +68,6 @@ Adds border-radius to element.
 // -------------------------------------------------------------------------------
 .class-name {
   @include border-radius(map-get($BORDER_RADIUS, BORDER_RADIUS_S));
-}
-
-// Custom corners: top-left, top-right, bottom-right, bottom-left
-// -------------------------------------------------------------------------------
-.class-name {
-  @include border-radius(
-    $radius-small,
-    $radius-small,
-    $radius-small,
-    $radius-small
-  );
-}
-
-// Available options
-// -------------------------------------------------------------------------------
-.class-name {
-  @include border-radius(
-    $radius-none,
-    $radius-small,
-    $radius-medium,
-    $radius-large,
-    $radius-full
-  );
 }
 ```
 
@@ -169,7 +146,7 @@ Improving font rendering with CSS
 
 ## Hidden element
 
-An easy way to hide an element from both screenreaders and browsers
+An easy way to hide an element from both screenreaders and browsers.
 
 ```scss
 .class-name {
@@ -179,15 +156,11 @@ An easy way to hide an element from both screenreaders and browsers
 
 ## Icon scale
 
-Sets width/height of icons. Matches \$type-scale
+Sets width/height of icons.
 
 ```scss
 .class-name {
-  @include icon-scale(m);
-}
-
-.class-name {
-  @include icon-scale-bg(m);
+  @include icon-scale(ICON_SCALE_1);
 }
 ```
 
@@ -211,7 +184,7 @@ compass-mixin `line-height`.
 
 ```scss
 .class-name {
-  @include line-height(xl);
+  @include line-height(LINE_HEIGHT_1);
 }
 ```
 
@@ -231,6 +204,10 @@ When using ::before and ::after you'll always need these three, so we're saving
 two lines of code every time you use this.
 
 ```scss
+.class-name::before {
+  @include pseudo;
+}
+
 .class-name::after {
   @include pseudo;
 }
@@ -277,7 +254,7 @@ A mixin that helps text-alignment.
 
 ```scss
 .class-name {
-  @include text-align(start);
+  @include text-align(ALIGN_CENTER);
 }
 ```
 
@@ -289,13 +266,11 @@ that we are “forced” in a friendly way to declare all 4 states of our links.
 The :hover and :focus pseudo-classes are usually declared together. Feel free to
 separate them if you want to do so.
 
-```scss
-.class-name {
-  @include text-underline();
-}
+- active-color
+- hover(focus)-color
+- visited-color
 
-// active-color, hover(focus)-color, visited-color
-// -------------------------------------------------------------------------------
+```scss
 .class-name {
   @include text-underline(red, yellow, blue);
 }
@@ -307,7 +282,7 @@ Transition with type and duration.
 
 ```scss
 .class-name {
-  @include transition(all, map-get($DURATION, DURATION_DEFAULT));
+  @include transition(all, DURATION_3, ease-in-out);
 }
 ```
 
@@ -321,6 +296,16 @@ compass-mixin `buf-type-scale`.
 
 ```scss
 .class-name {
-  @include type-scale(FONT_SIZE_M);
+  @include type-scale(TEXT_PRESET_2);
+}
+```
+
+## Z-index
+
+Mixin to organize your z-index
+
+```scss
+.class-name {
+  @include z-index(Z_INDEX_2);
 }
 ```

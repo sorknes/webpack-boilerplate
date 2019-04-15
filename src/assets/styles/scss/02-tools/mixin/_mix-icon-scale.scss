@@ -4,22 +4,6 @@
 // ===============================================================================
 //
 
-// @mixin icon-scale($scale, $map: $icon-scale) {
-//   width: rem(map-fetch($map, $scale width));
-//   height: rem(map-fetch($map, $scale height));
-
-//   svg {
-//     width: rem(map-fetch($map, $scale width));
-//     height: rem(map-fetch($map, $scale height));
-//   }
-// }
-
-// @mixin icon-scale-bg($scale, $map: $icon-scale) {
-//   width: rem(map-fetch($map, $scale width));
-//   height: rem(map-fetch($map, $scale height));
-//   background-size: cover;
-// }
-
 @mixin icon-scale($scale) {
   width: map-get($ICON_SCALE, $scale);
   height: map-get($ICON_SCALE, $scale);

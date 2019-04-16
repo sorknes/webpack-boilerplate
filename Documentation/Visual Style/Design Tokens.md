@@ -1,16 +1,25 @@
 # Tokens
 
-Here's a list of all available design tokens. Change them to fit your need.
-
-Design tokens are the visual design atoms of the design system — specifically,
-they are named entities that store visual design attributes. We use them in
-place of hard-coded values (such as hex values for color or pixel values for
-spacing) in order to maintain a scalable and consistent visual system for UI
-development
+We use
+[node-sass-json-importer](https://www.npmjs.com/package/node-sass-json-importer)
+to import our JSON files as design tokens. Design tokens are the visual design
+atoms of the design system — specifically, they are named entities that store
+visual design attributes. We use them in place of hard-coded values (such as hex
+values for color or pixel values for spacing) in order to maintain a scalable
+and consistent visual system for UI development
 
 > Resource: [SalesForce](https://www.lightningdesignsystem.com/design-tokens/).
 
+Here's a list of all available design tokens. Change them to fit your need.
+
 ## Border radius
+
+Usage:
+
+- map-get($BORDER_RADIUS, $top-left)
+- map-get($BORDER_RADIUS, $top-right)
+- map-get($BORDER_RADIUS, $bottom-left)
+- map-get($BORDER_RADIUS, $bottom-right);
 
 ```json
 {

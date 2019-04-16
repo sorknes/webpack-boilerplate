@@ -1,14 +1,14 @@
 # Tokens
 
-Here's a list of all available design tokens, with examples how to use them in
-your CSS file.
+Here's a list of all available design tokens. Change them to fit your need.
 
 Design tokens are the visual design atoms of the design system — specifically,
 they are named entities that store visual design attributes. We use them in
 place of hard-coded values (such as hex values for color or pixel values for
 spacing) in order to maintain a scalable and consistent visual system for UI
-development - Resource
-[SalesForce](https://www.lightningdesignsystem.com/design-tokens/).
+development
+
+> Resource: [SalesForce](https://www.lightningdesignsystem.com/design-tokens/).
 
 ## Border radius
 

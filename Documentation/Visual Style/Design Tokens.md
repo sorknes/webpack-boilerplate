@@ -14,13 +14,6 @@ Here's a list of all available design tokens. Change them to fit your need.
 
 ## Border radius
 
-Usage:
-
-- map-get($BORDER_RADIUS, $top-left)
-- map-get($BORDER_RADIUS, $top-right)
-- map-get($BORDER_RADIUS, $bottom-left)
-- map-get($BORDER_RADIUS, $bottom-right);
-
 ```json
 {
   "BORDER_RADIUS": {

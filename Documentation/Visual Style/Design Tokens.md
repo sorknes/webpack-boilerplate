@@ -12,9 +12,18 @@ development - Resource
 
 ## Border radius
 
-```scss
-.class-name {
-  border-radius: map-get($BORDER_RADIUS, BORDER_RADIUS_XXXL);
+```json
+{
+  "BORDER_RADIUS": {
+    "BORDER_RADIUS_NONE": "0",
+    "BORDER_RADIUS_1": "2px",
+    "BORDER_RADIUS_2": "4px",
+    "BORDER_RADIUS_3": "8px",
+    "BORDER_RADIUS_4": "16px",
+    "BORDER_RADIUS_5": "32px",
+    "BORDER_RADIUS_6": "9999px",
+    "BORDER_RADIUS_7": "100%"
+  }
 }
 ```
 

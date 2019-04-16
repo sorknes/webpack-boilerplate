@@ -29,68 +29,173 @@ development - Resource
 
 ## Border width
 
-```scss
-.class-name {
-  border: map-get($BORDER_WIDTH, BORDER_WIDTH_S) solid map-get(
-      $COLOR_GREY,
-      COLOR_GREY_TINT_0
-    );
+```json
+{
+  "BORDER_WIDTH": {
+    "BORDER_WIDTH_NONE": "0",
+    "BORDER_WIDTH_1": "1px",
+    "BORDER_WIDTH_2": "2px",
+    "BORDER_WIDTH_3": "4px",
+    "BORDER_WIDTH_4": "8px",
+    "BORDER_WIDTH_5": "16px",
+    "BORDER_WIDTH_6": "32px",
+    "BORDER_WIDTH_7": "64px"
+  }
 }
 ```
 
 ## Breakpoints
 
-```scss
-.class-name {
-  @media (min-width: map-get($BREAKPOINT, BREAKPOINT_S)) {
+```json
+{
+  "BREAKPOINT": {
+    "BREAKPOINT_1": "576px",
+    "BREAKPOINT_2": "768px",
+    "BREAKPOINT_3": "992px",
+    "BREAKPOINT_4": "1200px"
   }
 }
 ```
 
 ## Colors
 
-```scss
-.class-name {
-  background-color: map-get($COLOR_GREY, COLOR_GREY_TINT_0);
+```json
+{
+  "COLOR_GREY": {
+    "COLOR_GREY_TINT_100": "#ffffff",
+    "COLOR_GREY_TINT_95": "#f5f5f5",
+    "COLOR_GREY_TINT_90": "#e5e5e5",
+    "COLOR_GREY_TINT_85": "#d9d9d9",
+    "COLOR_GREY_TINT_80": "#cccccc",
+    "COLOR_GREY_TINT_75": "#bfbfbf",
+    "COLOR_GREY_TINT_70": "#b3b3b3",
+    "COLOR_GREY_TINT_65": "#a6a6a6",
+    "COLOR_GREY_TINT_60": "#999999",
+    "COLOR_GREY_TINT_55": "#8c8c8c",
+    "COLOR_GREY_TINT_50": "#7f7f7f",
+    "COLOR_GREY_TINT_45": "#737373",
+    "COLOR_GREY_TINT_40": "#666666",
+    "COLOR_GREY_TINT_35": "#595959",
+    "COLOR_GREY_TINT_30": "#4d4d4d",
+    "COLOR_GREY_TINT_25": "#404040",
+    "COLOR_GREY_TINT_20": "#333333",
+    "COLOR_GREY_TINT_15": "#262626",
+    "COLOR_GREY_TINT_10": "#1a1a1a",
+    "COLOR_GREY_TINT_5": "#0d0d0d",
+    "COLOR_GREY_TINT_0": "#000000"
+  }
 }
 ```
 
 ## Duration
 
-```scss
-.class-name {
-  transition-duration: map-get($DURATION, DURATION_DEFAULT);
+```json
+{
+  "DURATION": {
+    "DURATION_NONE": "0ms",
+    "DURATION_1": "100ms",
+    "DURATION_2": "200ms",
+    "DURATION_3": "300ms",
+    "DURATION_4": "500ms",
+    "DURATION_5": "700ms",
+    "DURATION_6": "1000ms",
+    "DURATION_7": "2000ms"
+  }
 }
 ```
 
 ## Font family
 
-```scss
-.class-name {
-  font-size: map-get($FONT_FAMILY, FONT_FAMILY_PRIMARY);
+```json
+{
+  "FONT_FAMILY": {
+    "FONT_FAMILY_1": ["'Open Sans'", "sans-serif"],
+    "FONT_FAMILY_2": ["'Playfair Display'", "serif"]
+  }
 }
 ```
 
 ## Font size
 
-```scss
-.class-name {
-  font-size: map-get($FONT_SIZE, FONT_SIZE_M);
+```json
+{
+  "FONT_SIZE": {
+    "FONT_SIZE_NONE": "0",
+    "FONT_SIZE_1": "12px",
+    "FONT_SIZE_2": "16px",
+    "FONT_SIZE_3": "20px",
+    "FONT_SIZE_4": "24px",
+    "FONT_SIZE_5": "28px",
+    "FONT_SIZE_6": "32px",
+    "FONT_SIZE_7": "42px"
+  }
 }
 ```
 
 ## Font weight
 
-```scss
-.class-name {
-  font-weight: map-get($FONT_WEIGHT, FONT_WEIGHT_REGULAR);
+```json
+{
+  "FONT_WEIGHT": {
+    "FONT_WEIGHT_NONE": "0",
+    "FONT_WEIGHT_1": "200",
+    "FONT_WEIGHT_2": "300",
+    "FONT_WEIGHT_3": "400",
+    "FONT_WEIGHT_4": "600",
+    "FONT_WEIGHT_5": "700",
+    "FONT_WEIGHT_6": "800",
+    "FONT_WEIGHT_7": "900"
+  }
+}
+```
+
+## Icon scale
+
+```json
+{
+  "ICON_SCALE": {
+    "ICON_SCALE_NONE": "0",
+    "ICON_SCALE_1": "8px",
+    "ICON_SCALE_2": "16px",
+    "ICON_SCALE_3": "24px",
+    "ICON_SCALE_4": "32px",
+    "ICON_SCALE_5": "40px",
+    "ICON_SCALE_6": "48px",
+    "ICON_SCALE_7": "56px"
+  }
 }
 ```
 
 ## Line height
 
-```scss
-.class-name {
-  line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_S);
+```json
+{
+  "LINE_HEIGHT": {
+    "LINE_HEIGHT_NONE": "0",
+    "LINE_HEIGHT_1": "1",
+    "LINE_HEIGHT_2": "1.50",
+    "LINE_HEIGHT_3": "1.25",
+    "LINE_HEIGHT_4": "1.25",
+    "LINE_HEIGHT_5": "1.15",
+    "LINE_HEIGHT_6": "1.15",
+    "LINE_HEIGHT_7": "1.15"
+  }
+}
+```
+
+## Z-index
+
+```json
+{
+  "Z_INDEX": {
+    "Z_INDEX_NONE": "0",
+    "Z_INDEX_1": "10",
+    "Z_INDEX_2": "20",
+    "Z_INDEX_3": "30",
+    "Z_INDEX_4": "40",
+    "Z_INDEX_5": "50",
+    "Z_INDEX_6": "60",
+    "Z_INDEX_7": "9999"
+  }
 }
 ```

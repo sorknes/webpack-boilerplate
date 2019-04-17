@@ -4,37 +4,6 @@ Here's a list of all available mixins.
 
 > TODO: describe the tokens / config / mixins flow
 
-## SASS-MQ (Media Query)
-
-[mq()](https://github.com/sass-mq/sass-mq) is a Sass mixin that helps you
-compose media queries in an elegant way.
-
-```scss
-.class-name {
-  @include mq($from: s, $until: m) {
-    background-color: red;
-  }
-
-  @include mq($from: m) {
-    background-color: green;
-  }
-}
-
-// Compiles to
-// -------------------------------------------------------------------------------
-@media (min-width: 36em) and (max-width: 48em) {
-  .class-name {
-    background: red;
-  }
-}
-
-@media (min-width: 48em) {
-  .class-name {
-    background: green;
-  }
-}
-```
-
 ## Border
 
 Add border to element.
@@ -198,16 +167,6 @@ Sets width/height of icons.
 }
 ```
 
-## Visually hidden
-
-An easy way to hide text from screen but not from screen-readers.
-
-```scss
-.class-name {
-  @include is-vhidden();
-}
-```
-
 ## Line height
 
 This mixin takes a parameter for line-height (sass-map: \$line-height). It then
@@ -219,6 +178,37 @@ compass-mixin `line-height`.
 ```scss
 .class-name {
   @include line-height(LINE_HEIGHT_1);
+}
+```
+
+## MQ (Media Query)
+
+[mq()](https://github.com/sass-mq/sass-mq) is a Sass mixin that helps you
+compose media queries in an elegant way.
+
+```scss
+.class-name {
+  @include mq($from: s, $until: m) {
+    background-color: red;
+  }
+
+  @include mq($from: m) {
+    background-color: green;
+  }
+}
+
+// Compiles to
+// -------------------------------------------------------------------------------
+@media (min-width: 36em) and (max-width: 48em) {
+  .class-name {
+    background: red;
+  }
+}
+
+@media (min-width: 48em) {
+  .class-name {
+    background: green;
+  }
 }
 ```
 
@@ -356,6 +346,16 @@ compass-mixin `buf-type-scale`.
 ```scss
 .class-name {
   @include type-scale(TEXT_PRESET_2);
+}
+```
+
+## Visually hidden
+
+An easy way to hide text from screen but not from screen-readers.
+
+```scss
+.class-name {
+  @include is-vhidden();
 }
 ```
 

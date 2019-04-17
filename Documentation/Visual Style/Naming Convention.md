@@ -113,3 +113,21 @@ Namespace should be wb followed by the dash suffix -, like this: wb- (wb =
 
 Namespacing in Sass is very useful for scoping project-specific styles and
 avoiding conflicts, e.g. with third party plugins og modules.
+
+I've created a variable that holds the prefix value, \$prefix: '.wb-';
+
+Usage:
+
+```scss
+#{$prefix}class-name {
+  color: black;
+}
+```
+
+Output:
+
+``scss .wb-class-name { color: black }
+
+```
+
+```

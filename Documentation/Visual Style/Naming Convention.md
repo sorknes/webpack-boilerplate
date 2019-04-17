@@ -126,8 +126,8 @@ Usage:
 
 Output:
 
-``scss .wb-class-name { color: black }
-
-```
-
+```scss
+.wb-class-name {
+  color: black;
+}
 ```

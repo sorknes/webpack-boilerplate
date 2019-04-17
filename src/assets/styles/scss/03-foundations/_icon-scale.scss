@@ -4,50 +4,50 @@
 // ===============================================================================
 //
 
-.icon {
+#{$prefix}icon {
   display: block;
 }
 
-.icon--inline {
+#{$prefix}icon--inline {
   display: inline-block;
 }
 
-.icon--xxs {
+#{$prefix}icon--xxs {
   @include icon-scale(ICON_SCALE_XXS);
 }
 
-.icon--xs {
+#{$prefix}icon--xs {
   @include icon-scale(ICON_SCALE_XS);
 }
 
-.icon--s {
+#{$prefix}icon--s {
   @include icon-scale(ICON_SCALE_S);
 }
 
-.icon--m {
+#{$prefix}icon--m {
   @include icon-scale(ICON_SCALE_M);
 }
 
-.icon--l {
+#{$prefix}icon--l {
   @include icon-scale(ICON_SCALE_L);
 }
 
-.icon--xl {
+#{$prefix}icon--xl {
   @include icon-scale(ICON_SCALE_XL);
 }
 
-.icon--xxl {
+#{$prefix}icon--xxl {
   @include icon-scale(ICON_SCALE_XXL);
 }
 
-.icon--xxxl {
+#{$prefix}icon--xxxl {
   @include icon-scale(ICON_SCALE_XXXL);
 }
 
-.icon--light {
+#{$prefix}icon--light {
   fill: map-get($COLOR_GREY, COLOR_GREY_TINT_100);
 }
 
-.icon--dark {
+#{$prefix}icon--dark {
   fill: map-get($COLOR_GREY, COLOR_GREY_TINT_0);
 }

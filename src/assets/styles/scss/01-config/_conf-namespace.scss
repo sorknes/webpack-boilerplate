@@ -1,13 +1,7 @@
 // -------------------------------------------------------------------------------
 //
-// Description: Form input
+// Description: Creating a global class namespace
 // ===============================================================================
 //
 
-input,
-#{$prefix}input {
-  @include input-placeholder {
-    color: map-get($COLOR_GREY, COLOR_GREY_TINT_25);
-    opacity: 1 !important;
-  }
-}
+$prefix: '.wb-';

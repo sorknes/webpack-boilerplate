@@ -46,7 +46,7 @@ bottom, or center of a column.
 
 ```scss
 <div class="row start-xs">
-  <div class="col-xs-6">content</div>
+  <div class="col-xs-6"></div>
 </div>
 ```
 

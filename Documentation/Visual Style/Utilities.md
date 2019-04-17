@@ -37,16 +37,18 @@ Show elements with display block.
 ```scss
 @media screen and (min-width: 36em) {
   .mt\:0\@xs {
-     margin-top: 0;
+    margin-top: 0;
   }
 }
 
 @media screen and (min-width: 36em) {
   .mt\:4\@xs {
-     margin-top: 1rem;
+    margin-top: 1rem;
   }
 }
+```
 
+```html
 <div class="class-name p:1@xs p:2@md">
   <h1 class="class-name__title">My Title</h1>
   <p class="class-name__content mt:1@xs mt:2@md">My content...</p>
@@ -62,9 +64,11 @@ accessible to ATs.
 .sr-only {
   @include sr-only;
 }
+```
 
-// Use in conjunction with .sr-only to only display content when it's focused.
-// -------------------------------------------------------------------------------
+Use in conjunction with .sr-only to only display content when it's focused.
+
+```scss
 .sr-only-focusable:focus,
 .sr-only-focusable:active {
   @include sr-only-focusable;

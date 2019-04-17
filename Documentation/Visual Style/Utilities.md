@@ -37,8 +37,7 @@ Show elements with display block.
 
 ## Spacing
 
-If you need to sett a different e.g. padding value based on breakpoints, there
-are some helper classes available.
+If you need to sett a different e.g. padding value based on breakpoints.
 
 ```scss
 @media screen and (min-width: 36em) {

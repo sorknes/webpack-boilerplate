@@ -1,6 +1,7 @@
 # Utility classes
 
-There are som nifty helper classes available.
+To help you have a consistent way of doing things, there are som nifty helper
+classes available.
 
 ## Hidden
 

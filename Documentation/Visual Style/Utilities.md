@@ -3,6 +3,8 @@
 To help you have a consistent way of doing things, there are som nifty helper
 classes available.
 
+> Let's keep things DRY
+
 ## Hidden
 
 Hide elements with display none.

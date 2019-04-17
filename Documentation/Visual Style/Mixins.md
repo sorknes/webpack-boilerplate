@@ -320,7 +320,7 @@ A mixin that helps text-alignment.
 ## Text underline
 
 The idea behind this mixin is that no defaults are declared in the arguments so
-that we are “forced” in a friendly way to declare all 4 states of our links.
+that I are “forced” in a friendly way to declare all 4 states of our links.
 
 The :hover and :focus pseudo-classes are usually declared together. Feel free to
 separate them if you want to do so.

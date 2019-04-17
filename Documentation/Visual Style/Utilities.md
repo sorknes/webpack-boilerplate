@@ -35,19 +35,26 @@ Show elements with display block.
 ## Spacing
 
 SCSS classes/mixins for responsive margins and padding.
-[Resource used](https://github.com/digitaledgeit/sass-spacing)
+[Resource used](https://github.com/digitaledgeit/sass-spacing).
+
+- pt = (p)adding(t)op
+- mb = (m)argin(b)ottom
 
 ```scss
-// p = padding t = top
-// -------------------------------------------------------------------------------
 .class-name {
   @include pt(4);
 }
 
-// m = margin t = bottom
-// -------------------------------------------------------------------------------
 .class-name {
   @include mb(4);
+}
+
+.class-name {
+  @include p(4);
+
+  @include mq($from: m) {
+    @include p(8);
+  }
 }
 ```
 

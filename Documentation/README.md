@@ -1,3 +1,0 @@
-# Documentation
-
-A short intro

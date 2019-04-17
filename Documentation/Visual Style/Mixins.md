@@ -80,13 +80,13 @@ Gallagher. This version is simplified for more modern browsers.
 // Max-width
 // -------------------------------------------------------------------------------
 .class-name {
-  @include container;
+  @include container();
 }
 
 // 100% width
 // -------------------------------------------------------------------------------
 .class-name {
-  @include container-fluid;
+  @include container-fluid();
 }
 ```
 
@@ -99,7 +99,7 @@ Adjust font-size and line-height values. Default values are:
 
 ```scss
 .class-name {
-  @include establish-baseline;
+  @include establish-baseline();
 }
 ```
 
@@ -165,7 +165,7 @@ Sets width/height of icons.
 
 ```scss
 .class-name {
-  @include invisible;
+  @include invisible();
 }
 ```
 
@@ -175,7 +175,7 @@ An easy way to hide text from screen but not from screen-readers.
 
 ```scss
 .class-name {
-  @include is-vhidden;
+  @include is-vhidden();
 }
 ```
 
@@ -229,7 +229,7 @@ compose media queries in an elegant way.
 The @content directive, allows us to pass a content block into a mixin.
 
 ```scss
-@include placeholder {
+@include placeholder() {
   color: map-get($COLOR_GREY, COLOR_GREY_TINT_25);
 }
 ```
@@ -241,11 +241,11 @@ two lines of code every time you use this.
 
 ```scss
 .class-name::before {
-  @include pseudo;
+  @include pseudo();
 }
 
 .class-name::after {
-  @include pseudo;
+  @include pseudo();
 }
 ```
 
@@ -256,7 +256,7 @@ top or bottom margin already applied.
 
 ```scss
 .class-name {
-  @include push-auto;
+  @include push-auto();
 }
 ```
 
@@ -264,7 +264,7 @@ top or bottom margin already applied.
 
 ```scss
 .class-name {
-  @include show;
+  @include show();
 }
 ```
 
@@ -301,14 +301,14 @@ accessible to ATs.
 
 ```scss
 .class-name {
-  @include sr-only;
+  @include sr-only();
 }
 
 // Use in conjunction with .sr-only to only display content when it's focused.
 // -------------------------------------------------------------------------------
 .class-name:focus,
 .class-name:active {
-  @include sr-only-focusable;
+  @include sr-only-focusable();
 }
 ```
 

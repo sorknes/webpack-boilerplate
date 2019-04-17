@@ -4,7 +4,7 @@
 // ===============================================================================
 //
 
-@mixin focus {
+@mixin focus() {
   outline: 0;
   box-shadow: 0 0 0 4px map-get($COLOR_GREY, COLOR_GREY_TINT_90);
   position: relative;

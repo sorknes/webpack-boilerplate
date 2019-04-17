@@ -13,10 +13,3 @@
     height: inherit;
   }
 }
-
-@mixin icon-scale-bg($scale) {
-  width: map-get($ICON_SCALE, $scale);
-  height: map-get($ICON_SCALE, $scale);
-
-  background-size: cover;
-}

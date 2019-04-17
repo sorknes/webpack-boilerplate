@@ -6,7 +6,7 @@
 // ===============================================================================
 //
 
-@mixin input-placeholder {
+@mixin input-placeholder() {
   &.placeholder {
     @content;
   }

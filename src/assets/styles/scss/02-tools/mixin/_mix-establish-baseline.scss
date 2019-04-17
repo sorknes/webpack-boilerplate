@@ -4,7 +4,7 @@
 // ===============================================================================
 //
 
-@mixin establish-baseline {
+@mixin establish-baseline() {
   font-size: map-get($FONT_SIZE, FONT_SIZE_2);
   line-height: map-get($LINE_HEIGHT, LINE_HEIGHT_2);
   text-size-adjust: 100%;

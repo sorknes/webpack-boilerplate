@@ -5,7 +5,7 @@
 // ===============================================================================
 //
 
-@mixin sr-only-focusable {
+@mixin sr-only-focusable() {
   width: auto !important;
   height: auto !important;
   margin: auto !important;

@@ -6,8 +6,6 @@ Here's a list of all available mixins.
 
 ## Border
 
-Add border to element.
-
 ```scss
 // Border all sides
 // -------------------------------------------------------------------------------
@@ -29,8 +27,6 @@ Add border to element.
 ```
 
 ## Border radius
-
-Adds border-radius to element.
 
 ```scss
 // All corners
@@ -80,8 +76,6 @@ Gallagher. This version is simplified for more modern browsers.
 
 ## Container
 
-Container mixin
-
 ```scss
 // Max-width
 // -------------------------------------------------------------------------------
@@ -125,7 +119,7 @@ Choose between different sets of font-families.
 
 ```scss
 .class-name {
-  @include font-family(FONT_FAMILY_PRIMARY);
+  @include font-family(FONT_FAMILY_1);
 }
 ```
 
@@ -143,7 +137,7 @@ Improving font rendering with CSS
 
 ```scss
 .class-name {
-  @include font-weight(FONT_WEIGHT_REGULAR);
+  @include font-weight(FONT_WEIGHT_1);
 }
 ```
 
@@ -164,6 +158,24 @@ Sets width/height of icons.
 ```scss
 .class-name {
   @include icon-scale(ICON_SCALE_1);
+}
+```
+
+## Invisible
+
+```scss
+.class-name {
+  @include invisible;
+}
+```
+
+## Is visually hidden
+
+An easy way to hide text from screen but not from screen-readers.
+
+```scss
+.class-name {
+  @include is-vhidden;
 }
 ```
 
@@ -245,6 +257,14 @@ top or bottom margin already applied.
 ```scss
 .class-name {
   @include push-auto;
+}
+```
+
+## Show
+
+```scss
+.class-name {
+  @include show;
 }
 ```
 
@@ -346,16 +366,6 @@ compass-mixin `buf-type-scale`.
 ```scss
 .class-name {
   @include type-scale(TEXT_PRESET_2);
-}
-```
-
-## Visually hidden
-
-An easy way to hide text from screen but not from screen-readers.
-
-```scss
-.class-name {
-  @include is-vhidden();
 }
 ```
 

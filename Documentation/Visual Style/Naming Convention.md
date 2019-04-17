@@ -52,7 +52,7 @@ and 7 are the largest value.
 
 - icon-scale-none (0)
 - icon-scale-1 (8px)
-- icon-scale-2 (16px)
+- icon-scale-2 (16px - default)
 - icon-scale-3 (24px)
 - icon-scale-4 (32px)
 - icon-scale-5 (40px)
@@ -77,7 +77,7 @@ and 7 are the largest value.
 
 - font-size-none (0)
 - font-size-1 (small)
-- font-size-2 (default)
+- font-size-2 (h6, p - default)
 - font-size-3 (h5)
 - font-size-4 (h4)
 - font-size-5 (h3)
@@ -89,7 +89,7 @@ and 7 are the largest value.
 - font-weight-none (0)
 - font-weight-1 (200)
 - font-weight-2 (300)
-- font-weight-3 (400)
+- font-weight-3 (400 - default)
 - font-weight-4 (600)
 - font-weight-5 (700)
 - font-weight-6 (800)
@@ -99,7 +99,7 @@ and 7 are the largest value.
 
 - line-height-none (0)
 - line-height-1 (small)
-- line-height-2 (default)
+- line-height-2 (h6, p - default)
 - line-height-3 (h5)
 - line-height-4 (h4)
 - line-height-5 (h3)

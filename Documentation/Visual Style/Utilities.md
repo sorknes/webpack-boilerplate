@@ -34,28 +34,23 @@ Show elements with display block.
 
 ## Spacing
 
-SCSS classes/mixins for responsive margins and padding.
-[Resource used](https://github.com/digitaledgeit/sass-spacing).
-
-- pt = (p)adding(t)op
-- mb = (m)argin(b)ottom
-
 ```scss
-.class-name {
-  @include pt(4);
-}
-
-.class-name {
-  @include mb(4);
-}
-
-.class-name {
-  @include p(4);
-
-  @include mq($from: m) {
-    @include p(8);
+@media screen and (min-width: 36em) {
+  .mt\:0\@xs {
+     margin-top: 0;
   }
 }
+
+@media screen and (min-width: 36em) {
+  .mt\:4\@xs {
+     margin-top: 1rem;
+  }
+}
+
+<div class="class-name p:1@xs p:2@md">
+  <h1 class="class-name__title">My Title</h1>
+  <p class="class-name__content mt:1@xs mt:2@md">My content...</p>
+</div>
 ```
 
 ## Sr-only

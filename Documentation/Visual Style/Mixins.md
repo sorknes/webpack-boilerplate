@@ -258,6 +258,32 @@ top or bottom margin already applied.
 }
 ```
 
+## Spacing
+
+SCSS classes/mixins for responsive margins and padding.
+[Resource used](https://github.com/digitaledgeit/sass-spacing).
+
+- pt = (p)adding(t)op
+- mb = (m)argin(b)ottom
+
+```scss
+.class-name {
+  @include pt(4);
+}
+
+.class-name {
+  @include mb(4);
+}
+
+.class-name {
+  @include p(4);
+
+  @include mq($from: m) {
+    @include p(8);
+  }
+}
+```
+
 ## Screen readers only
 
 Theorically bulletproof CSS class for visually hide anything and keep it

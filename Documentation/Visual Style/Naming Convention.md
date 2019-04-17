@@ -105,3 +105,11 @@ and 7 are the largest value.
 - line-height-5 (h3)
 - line-height-6 (h2)
 - line-height-7 (h1)
+
+## Global class namespace
+
+Namespace should be wb followed by the dash suffix -, like this: wb- (wb =
+(w)ebpack(b)oilerplate.
+
+Namespacing in Sass is very useful for scoping project-specific styles and
+avoiding conflicts, e.g. with third party plugins og modules.

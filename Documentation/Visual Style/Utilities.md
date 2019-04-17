@@ -3,7 +3,7 @@
 To help you have a consistent way of doing things, there are som nifty helper
 classes available.
 
-> Let's keep things DRY
+> Let's keep things [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
 
 ## Hidden
 

@@ -1,0 +1,11 @@
+// -------------------------------------------------------------------------------
+//
+// Description: Insert text here
+// ===============================================================================
+//
+
+a,
+#{$prefix}-link {
+  @include text-underline(red, yellow, blue);
+  @include transition(all, DURATION_3, ease-in-out);
+}

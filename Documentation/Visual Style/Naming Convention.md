@@ -48,6 +48,17 @@ and 7 are the largest value.
 - border-width-6 (32px)
 - border-width-7 (64px)
 
+## Box shadow
+
+- box-shadow-none (0 0 0 0)
+- box-shadow-1 (0 0 0 2px - spread)
+- box-shadow-2 (0 0 0 4px - spread)
+- box-shadow-3 (0 0 8px 0 - blur)
+- box-shadow-4 (0 0 12px 0 - blur)
+- box-shadow-5 (0 0 16px 0 - blur)
+- box-shadow-6 (0 0 20px 0 - blur)
+- box-shadow-7 (0 0 24px 0 - blur)
+
 ## Icon
 
 - icon-scale-none (0)

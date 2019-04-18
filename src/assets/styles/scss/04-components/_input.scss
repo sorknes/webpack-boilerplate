@@ -5,7 +5,7 @@
 //
 
 input,
-#{$prefix}input {
+#{$prefix}-input {
   @include input-placeholder {
     color: map-get($COLOR_GREY, COLOR_GREY_TINT_25);
     opacity: 1 !important;

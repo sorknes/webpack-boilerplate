@@ -4,50 +4,46 @@
 // ===============================================================================
 //
 
-#{$prefix}icon {
+#{$prefix}-icon {
   display: block;
 }
 
-#{$prefix}icon--inline {
+#{$prefix}-icon--inline {
   display: inline-block;
 }
 
-#{$prefix}icon--xxs {
-  @include icon-scale(ICON_SCALE_XXS);
+#{$prefix}-icon--xs {
+  @include icon-scale(ICON_SCALE_1);
 }
 
-#{$prefix}icon--xs {
-  @include icon-scale(ICON_SCALE_XS);
+#{$prefix}-icon--s {
+  @include icon-scale(ICON_SCALE_2);
 }
 
-#{$prefix}icon--s {
-  @include icon-scale(ICON_SCALE_S);
+#{$prefix}-icon--m {
+  @include icon-scale(ICON_SCALE_3);
 }
 
-#{$prefix}icon--m {
-  @include icon-scale(ICON_SCALE_M);
+#{$prefix}-icon--l {
+  @include icon-scale(ICON_SCALE_4);
 }
 
-#{$prefix}icon--l {
-  @include icon-scale(ICON_SCALE_L);
+#{$prefix}-icon--xl {
+  @include icon-scale(ICON_SCALE_5);
 }
 
-#{$prefix}icon--xl {
-  @include icon-scale(ICON_SCALE_XL);
+#{$prefix}-icon--xxl {
+  @include icon-scale(ICON_SCALE_6);
 }
 
-#{$prefix}icon--xxl {
-  @include icon-scale(ICON_SCALE_XXL);
+#{$prefix}-icon--xxxl {
+  @include icon-scale(ICON_SCALE_7);
 }
 
-#{$prefix}icon--xxxl {
-  @include icon-scale(ICON_SCALE_XXXL);
-}
-
-#{$prefix}icon--light {
+#{$prefix}-icon--light {
   fill: map-get($COLOR_GREY, COLOR_GREY_TINT_100);
 }
 
-#{$prefix}icon--dark {
+#{$prefix}-icon--dark {
   fill: map-get($COLOR_GREY, COLOR_GREY_TINT_0);
 }

@@ -18,32 +18,32 @@ h6 {
 }
 
 h1,
-#{$prefix}h1 {
+#{$prefix}-h1 {
   @include type-scale(TEXT_PRESET_7);
 }
 
 h2,
-#{$prefix}h2 {
+#{$prefix}-h2 {
   @include type-scale(TEXT_PRESET_6);
 }
 
 h3,
-#{$prefix}h3 {
+#{$prefix}-h3 {
   @include type-scale(TEXT_PRESET_5);
 }
 
 h4,
-#{$prefix}h4 {
+#{$prefix}-h4 {
   @include type-scale(TEXT_PRESET_4);
 }
 
 h5,
-#{$prefix}h5 {
+#{$prefix}-h5 {
   @include type-scale(TEXT_PRESET_3);
 }
 
 h6,
-#{$prefix}h6 {
+#{$prefix}-h6 {
   text-transform: uppercase;
 
   @include type-scale(TEXT_PRESET_2);
@@ -52,14 +52,14 @@ h6,
 // // Paragraph
 // // -------------------------------------------------------------------------------
 p,
-#{$prefix}paragraph {
+#{$prefix}-paragraph {
   @include mb(6);
 }
 
 // // Small
 // // -------------------------------------------------------------------------------
 small,
-#{$prefix}small {
+#{$prefix}-small {
   @include type-scale(TEXT_PRESET_1);
 }
 

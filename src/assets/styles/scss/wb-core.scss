@@ -138,14 +138,6 @@ body {
   }
 }
 
-.wb-link {
-  @include text-underline(red, yellow, blue);
-  @include transition(all, DURATION_3, ease-in-out);
-  @include z-index(Z_INDEX_2);
-  @include line-height(LINE_HEIGHT_1);
-  @include establish-baseline;
-}
-
 .wb-image-test {
   width: rem(400px);
   height: rem(400px);

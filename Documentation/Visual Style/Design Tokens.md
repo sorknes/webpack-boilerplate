@@ -46,6 +46,23 @@ Here's a list of all available design tokens. Change them to fit your need.
 }
 ```
 
+## Box shadow
+
+```json
+{
+  "BOX_SHADOW": {
+    "BOX_SHADOW_NONE": "0 0 0 0",
+    "BOX_SHADOW_1": "0 0 0 2px",
+    "BOX_SHADOW_2": "0 0 0 4px",
+    "BOX_SHADOW_3": "0 0 8px 0",
+    "BOX_SHADOW_4": "0 0 12px 0",
+    "BOX_SHADOW_5": "0 0 16px 0",
+    "BOX_SHADOW_6": "0 0 20px 0",
+    "BOX_SHADOW_7": "0 0 24px 0"
+  }
+}
+```
+
 ## Breakpoints
 
 ```json

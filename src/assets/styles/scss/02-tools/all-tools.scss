@@ -12,8 +12,9 @@
 
 // Mixin
 // -------------------------------------------------------------------------------
-@import './mixin/mix-border';
 @import './mixin/mix-border-radius';
+@import './mixin/mix-border';
+@import './mixin/mix-box-shadow';
 @import './mixin/mix-center';
 @import './mixin/mix-clearfix';
 @import './mixin/mix-container';

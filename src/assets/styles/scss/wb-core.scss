@@ -143,6 +143,8 @@ body {
   height: rem(400px);
   background-image: url('../../images/image.png');
   background-size: cover;
+
+  @include box-shadow(BOX_SHADOW_7, map-get($COLOR_GREY, COLOR_GREY_TINT_50));
 }
 
 .wb-test-border-radius {

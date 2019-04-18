@@ -53,6 +53,14 @@ Here's a list of all available mixins.
 }
 ```
 
+## Box shadow
+
+```scss
+.class-name {
+  @include box-shadow(BOX_SHADOW_7, map-get($COLOR_GREY, COLOR_GREY_TINT_50));
+}
+```
+
 ## Center element
 
 Align element to center, and center align text.

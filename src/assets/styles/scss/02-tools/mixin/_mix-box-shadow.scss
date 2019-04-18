@@ -1,13 +1,9 @@
 // -------------------------------------------------------------------------------
 //
-// Description: Focus style
+// Description: Box shadow
 // ===============================================================================
 //
 
-@mixin focus() {
-  outline: 0;
-  position: relative;
-  z-index: 1;
-
-  @include box-shadow(BOX_SHADOW_2, map-get($COLOR_GREY, COLOR_GREY_TINT_90));
+@mixin box-shadow($shadow, $shadow-color: null) {
+  box-shadow: map-get($BOX_SHADOW, $shadow) $shadow-color;
 }

@@ -14,7 +14,9 @@
   @if $border-position == all {
     border: map-get($BORDER_WIDTH, $border-size) $border-pattern $border-color;
   } @else {
-    border-#{$border-position}: $border-size $border-pattern $border-color;
+    border-#{$border-position}: map-get($BORDER_WIDTH, $border-size)
+      $border-pattern
+      $border-color;
   }
   @if $border-clear == none {
     $border-position: all;

@@ -208,11 +208,11 @@ compose media queries in an elegant way.
 
 ```scss
 .class-name {
-  @include mq($from: s, $until: m) {
+  @include mq($from: xs, $until: sm) {
     background-color: red;
   }
 
-  @include mq($from: m) {
+  @include mq($from: sm) {
     background-color: green;
   }
 }
